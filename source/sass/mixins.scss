@@ -1,0 +1,40 @@
+@mixin reset-ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin pseudo-elem {
+  position: absolute;
+  content: "";
+  display: block;
+}
+
+@mixin font($font-size, $line-height) {
+  font-size: $font-size * 1px;
+  line-height: $line-height * 1px;
+}
+
+@mixin size($width, $height) {
+  width: $width * 1px;
+  height: $height * 1px;
+}
+
+@mixin visually-hidden() {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+}
