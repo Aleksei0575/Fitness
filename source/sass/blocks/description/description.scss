@@ -1,0 +1,95 @@
+.description {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.description__content {
+  width: 364px;
+  padding-left: 59px;
+
+  @media (max-width: 1325px) and (min-width: 1024px) {
+    padding-left: 0;
+    margin-left: auto;
+  }
+
+  @media (max-width: 1175px) and (min-width: 1024px) {
+    flex-shrink: 0;
+  }
+
+  h2 {
+    margin: 0;
+    padding-top: 43px;
+    padding-bottom: 12px;
+    font-family: $bebas-neue;
+    @include font(49, 49);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  p:nth-child(2) {
+    @include reset;
+    @include font(18, 27);
+    padding-bottom: 39px;
+  }
+
+  p:nth-child(3) {
+    @include reset;
+    @include font(16, 24);
+    padding-bottom: 8px;
+  }
+
+  p:nth-child(4) {
+    @include reset;
+    @include font(16, 24);
+  }
+}
+
+.description__gallery {
+  width: 723px;
+  //position: relative;
+
+  background-image: url("../img/img-description-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top 0 right 0;
+  background-size: 660px 401px;
+  min-height: 401px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("img-description-desktop@2x.jpg");
+  }
+}
+
+.description__gallery-wrapper {
+  position: relative;
+  width: 364px;
+  padding-top: 288px;
+
+  @media (max-width: 1350px) and (min-width: 1024px) {
+    margin-left: auto;
+  }
+
+  picture {
+    display: block;
+    position: relative;
+  }
+}
+
+.description__button {
+  background-image: url("../img/description-button.png");
+  background-repeat: no-repeat;
+  background-position: top 0 right 0;
+  background-size: 100px 100px;
+  width: 104px;
+  height: 104px;
+
+  position: absolute;
+  
+  bottom: 60px;
+  left: 35%;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}

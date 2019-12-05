@@ -1,0 +1,130 @@
+.subscription {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: $light-gray;
+
+  h2 {
+    width: 225px;
+    margin: 0 auto;
+    padding-bottom: 32px;
+    font-family: $bebas-neue;
+    @include font(49, 49);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+}
+
+.subscription__navigation {
+  width: 341px;
+  margin: 0 auto;
+  margin-bottom: 37px;
+  display: flex;
+  justify-content: space-between;
+  @include font(20, 30);
+
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+
+  span:hover {
+    border-bottom: 2px solid #D10A42;
+  }
+
+  span {
+    padding-bottom: 12px;
+  }
+}
+
+.subscription__container {
+  margin: 0 auto;
+  padding-left: $desktop-padding;
+  padding-right: $desktop-padding;
+}
+
+.subscription__list {
+  @include reset-ul;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+
+.subscription__item {
+  width: 31%;
+  padding-top: 63px;
+  min-height: 448px;
+  margin-bottom: 27px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: $white;
+  box-sizing: border-box;
+
+  cursor: pointer;
+
+  //&:nth-child(odd) {
+  //  margin-right: auto;
+  //}
+  &:hover {
+    box-sizing: border-box;
+    padding-top: 57px;
+    border: 8px solid transparent;
+    border-image: linear-gradient(111.72deg, #ED0233 17.6%, #003EB7 95.31%);
+    border-image-slice: 1;
+  }
+
+  h3 {
+    margin: 0;
+    padding-bottom: 10px;
+    @include font(26, 29);
+    font-weight: 700;
+    text-align: center;
+    color: $blue;
+  }
+
+  span:nth-child(2) {
+    @include font(16, 24);
+    padding-bottom: 66px;
+    display: block;
+    text-align: center;
+
+    color: $blue;
+  }
+
+  span:nth-child(3) {
+    @include font(60, 90);
+    font-weight: 700;
+    display: block;
+    text-align: center;
+
+    color: #103aae;
+  }
+}
+
+.subscription__link {
+  padding-bottom: 32px;
+}
+
+.subscription__button {
+  font-family: $roboto-condensed;
+  @include font(12, 14);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 44px;
+  padding-right: 44px;
+  min-width: 117px;
+
+  color: $blue;
+
+  border: 2px solid $blue;
+
+  &:hover {
+    color: $white;
+    background: linear-gradient(111.72deg, #ED0233 17.6%, #003EB7 95.31%);
+  }
+}
