@@ -1,0 +1,200 @@
+.stocks {
+  padding-top: 115px;
+  padding-bottom: 94px;
+
+  h2 {
+    width: 115px;
+    margin: 0 auto;
+    padding-bottom: 55px;
+    font-family: $bebas-neue;
+    @include font(49, 49);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+}
+
+.stocks__block {
+  display: flex;
+  //flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.stocks__block-left {
+  width: 560px;
+  display: flex;
+}
+
+.stocks__block-info {
+  width: 280px;
+  height: 462px;
+  padding: 34px 45px 46px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: $light-red;
+
+  box-sizing: border-box;
+
+  h3 {
+    @include reset;
+    @include font(28, 44);
+    font-weight: bold;
+
+    color: $white;
+  }
+
+  span {
+    padding-bottom: 25px;
+    @include font(70, 58);
+    font-weight: bold;
+
+    color: $white;
+  }
+
+  p {
+    @include reset;
+    @include font(18, 25);
+    color: $white;
+  }
+
+  a {
+    width: 79px;
+    margin-top: auto;
+    @include font(14, 16);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    //text-decoration: underline;
+
+    color: $white;
+    border-bottom: 1px solid $white;
+
+    &:hover {
+      color: #1c3374;
+      border-bottom: 1px solid #1c3374;
+    }
+  }
+}
+
+.stocks__block-image {
+  width: 280px;
+  height: 462px;
+
+  background-image:
+    url("../img/stocks-desktop@1x.jpg");
+  background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
+  min-height: 462px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image:
+      url("../img/stocks-desktop@2x.jpg");
+  }
+}
+
+.stocks__block-right {
+  width: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stocks__block-top {
+  padding: 22px 27px 29px;
+  height: 145px;
+  display: flex;
+  flex-direction: column;
+
+  border: 8px solid transparent;
+  border-image: linear-gradient(111.72deg, #ED0233 17.6%, #003EB7 95.31%);
+  border-image-slice: 1;
+
+  &:hover,
+  &:focus {
+    box-shadow: -2px 1px 15px 0px #a9adb5,
+    2px 15px 25px 0px #a9adb5;
+  }
+
+  h3 {
+    @include reset;
+    @include font(26, 30);
+    padding-bottom: 6px;
+
+    color: #1c3374;
+  }
+
+  p {
+    @include reset;
+    @include font(16, 22);
+
+    color: #1c3374;
+  }
+
+  a {
+    width: 69px;
+    display: block;
+    margin-top: auto;
+    @include font(12, 14);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #1c3374;
+    border-bottom: 1px solid #1c3374;
+
+    &:hover,
+    &:focus {
+      color: $light-red;
+      border-bottom: 1px solid $light-red;
+    }
+  }
+}
+
+.stocks__block-bottom {
+  padding: 22px 27px 29px;
+  height: 145px;
+  display: flex;
+  flex-direction: column;
+
+  border: 8px solid transparent;
+  border-image: linear-gradient(111.72deg, #ED0233 17.6%, #003EB7 95.31%);
+  border-image-slice: 1;
+
+  &:hover,
+  &:focus {
+    box-shadow: -2px 1px 15px 0px #a9adb5,
+    2px 15px 25px 0px #a9adb5;
+  }
+
+  h3 {
+    @include reset;
+    @include font(26, 30);
+    padding-bottom: 6px;
+
+    color: #1c3374;
+  }
+
+  p {
+    @include reset;
+    @include font(16, 22);
+
+    color: #1c3374;
+  }
+
+  a {
+    width: 69px;
+    display: block;
+    margin-top: auto;
+    @include font(12, 14);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #1c3374;
+    border-bottom: 1px solid #1c3374;
+
+    &:hover,
+    &:focus {
+      color: $light-red;
+      border-bottom: 1px solid $light-red;
+    }
+  }
+}

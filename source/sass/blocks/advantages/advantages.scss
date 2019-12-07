@@ -1,0 +1,265 @@
+.advantages {
+  padding-top: 115px;
+  padding-bottom: 113px;
+  background-color: $light-gray;
+
+  h2 {
+    width: 382px;
+    margin: 0 auto;
+    padding-bottom: 73px;
+    font-family: $bebas-neue;
+    @include font(49, 49);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+}
+
+.advantages__container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding-left: $desktop-padding;
+  padding-right: $desktop-padding;
+}
+
+.advantages__block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  h3 {
+    @include reset;
+  }
+
+  p {
+    @include reset;
+  }
+}
+
+.advantages__block-left {
+  max-width: 38.5%;
+  display: flex;
+  flex-direction: column;
+
+  span:first-child {
+    @include font(71, 106);
+    font-weight: bold;
+    display: block;
+  }
+
+  .advantages__area {
+    display: flex;
+    padding-bottom: 75px;
+    max-width: 345px;
+    border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+
+    div {
+      position: relative;
+    }
+
+    div:first-child {
+      padding-left: 27px;
+    }
+
+    span:first-child {
+      margin-top: -28px;
+      background: linear-gradient(123deg,#ed0233 11%, #003eb7 56%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    span:last-child {
+      position: absolute;
+      bottom: 1px;
+    }
+
+    div:last-child {
+      margin-top: -6px;
+      padding-left: 30px;
+      width: 180px;
+
+      @media (max-width: 1110px) and (min-width: 1024px) {
+        padding-left: 0;
+        margin-left: auto;
+      }
+
+      h3 {
+        @include font(22, 33);
+        padding-bottom: 5px;
+      }
+
+      p {
+        @include font(16, 22);
+      }
+    }
+  }
+
+  .advantages__comfort {
+    display: flex;
+    padding-top: 53px;
+
+    div {
+      position: relative;
+    }
+
+    div:first-child {
+      padding-left: 20px;
+    }
+
+    span:first-child {
+      background: linear-gradient(123deg,#ed0233 11%, #003eb7 56%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    span:last-child {
+      position: absolute;
+      bottom: 2px;
+    }
+
+    div:last-child {
+      padding-top: 22px;
+      padding-left: 30px;
+      width: 187px;
+
+      @media (max-width: 1110px) and (min-width: 1024px) {
+        padding-left: 0;
+        margin-left: auto;
+      }
+    }
+
+    h3 {
+      @include font(22, 33);
+      padding-bottom: 5px;
+    }
+
+    p {
+      @include font(16, 22);
+    }
+  }
+}
+
+.advantages__block-center {
+  width: 23%;
+  max-height: 307px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  background-color: #1c3374;
+
+  span:first-child {
+    padding-top: 34px;
+    @include font(74, 111);
+    font-weight: bold;
+    color: $white;
+  }
+
+  span:nth-child(2) {
+    margin-top: -14px;
+    padding-bottom: 30px;
+    @include font(26, 39);
+    font-weight: bold;
+    color: $white;
+  }
+
+  p {
+    width: 175px;
+    @include font(16, 24);
+    color: $white;
+  }
+}
+
+.advantages__block-right {
+  max-width: 38.5%;
+
+  span:first-child {
+    @include font(71, 106);
+    font-weight: bold;
+    display: block;
+  }
+
+  .advantages__parking {
+    display: flex;
+    padding-bottom: 75px;
+    width: 339px;
+    border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+
+    div {
+      position: relative;
+    }
+
+    span:first-child {
+      margin-top: -28px;
+      background: linear-gradient(123deg,#ed0233 11%, #003eb7 56%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    span:last-child {
+      position: absolute;
+      bottom: 1px;
+    }
+
+    div:last-child {
+      margin-top: -6px;
+      padding-left: 30px;
+
+      @media (max-width: 1110px) and (min-width: 1024px) {
+        padding-left: 0;
+        margin-left: auto;
+      }
+
+      h3 {
+        @include font(22, 33);
+        padding-bottom: 5px;
+      }
+
+      p {
+        @include font(16, 22);
+      }
+    }
+  }
+
+  .advantages__experience {
+    display: flex;
+    padding-top: 53px;
+    width: 340px;
+
+    div {
+      position: relative;
+    }
+
+    span:first-child {
+      background: linear-gradient(123deg,#ed0233 11%, #003eb7 56%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    span:last-child {
+      position: absolute;
+      bottom: 2px;
+    }
+
+    div:last-child {
+      padding-top: 22px;
+      padding-left: 30px;
+      //width: 187px;
+
+      @media (max-width: 1110px) and (min-width: 1024px) {
+        padding-left: 0;
+        margin-left: auto;
+      }
+    }
+
+    h3 {
+      @include font(22, 33);
+      padding-bottom: 5px;
+    }
+
+    p {
+      @include font(16, 22);
+    }
+  }
+}

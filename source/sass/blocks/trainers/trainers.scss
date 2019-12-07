@@ -1,0 +1,13 @@
+.trainers {
+  padding-bottom: 120px;
+
+  h2 {
+    //width: 151px;
+    margin: 0 auto;
+    padding-bottom: 55px;
+    font-family: $bebas-neue;
+    @include font(49, 49);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+}

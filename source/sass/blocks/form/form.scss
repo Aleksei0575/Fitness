@@ -1,0 +1,84 @@
+.form {
+  padding-top: 42px;
+  padding-bottom: 68px;
+  padding-left: $desktop-padding;
+  width: 410px;
+
+  @media (max-width: 1200px) and (min-width: 1024px) {
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.form__item {
+  width: 190px;
+  padding-bottom: 27px;
+}
+
+.form__item input[type="text"],
+.form__item input[type="tel"] {
+  width: 100%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  height: 23px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #74819c;
+  color: $white;
+
+  &::-webkit-input-placeholder {
+    color: $white;
+  }
+
+  &::-moz-placeholder {
+    color: $white;
+  }
+
+  &:-ms-input-placeholder {
+    color: $white;
+  }
+
+  &:hover {
+    border-color: rgba($white, 0.5);
+    outline: none;
+  }
+
+  &:focus {
+    border-color: $white;
+    outline: none;
+  }
+}
+
+.form {
+  button {
+    flex-grow: 1;
+    display: inline-block;
+
+    padding: 17px 160px;
+    min-width: 77px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: .05em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    
+    background-color: transparent;
+    border: 3px solid #ffffff;
+    cursor: pointer;
+
+    &:hover {
+      color: $blue;
+      background-color: $white;
+    }
+  }
+}

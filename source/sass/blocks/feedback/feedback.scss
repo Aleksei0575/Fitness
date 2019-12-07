@@ -1,0 +1,25 @@
+.feedback {
+  width: 50%;
+  background-color: $blue;
+
+  h2 {
+    width: 370px;
+    //margin: 0 auto;
+    //padding-bottom: 56px;
+    @include reset;
+    padding-top: 65px;
+    padding-left: $desktop-padding;
+    font-family: $bebas-neue;
+    @include font(49, 49);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $white;
+
+    @media (max-width: 1200px) and (min-width: 1024px) {
+      padding-left: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
