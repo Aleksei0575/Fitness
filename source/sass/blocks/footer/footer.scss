@@ -32,10 +32,33 @@
 
 .footer__navigation-link {
   color: $white;
+
+  &:hover {
+    color: $light-red;
+  }
 }
 
 .footer__social {
   width: 110px;
+
+  .footer__social-icon {
+    fill: $white;
+
+    &--vk:hover,
+    &--vk:focus {
+      fill: $light-red;
+    }
+
+    &--ig:hover,
+    &--vk:focus {
+      fill: $light-red;
+    }
+
+    &--fb:hover,
+    &--vk:focus {
+      fill: $light-red;
+    }
+  }
 
   .footer__social-list {
     @include reset-ul;
@@ -81,10 +104,90 @@
 @media (max-width: $mobile-width) {
   .footer__wrapper {
     flex-wrap: wrap;
+    position: relative;
+
+    span {
+      position: absolute;
+      @include font(20, 20);
+      top: 5px;
+      left: 15px;
+    }
+    
+    .footer__navigation {
+      padding-left: 0;
+    }
+
+    .footer__navigation-list {
+      display: block;
+      //width: 200px;
+      //flex-wrap: wrap;
+      column-count: 2;
+      display: block;
+
+      li:first-child {
+        margin-top: 40px;
+
+        a {
+          @include font(16, 19);
+        }
+      }
+
+      li:nth-child(2) {
+        padding-top: 19px;
+
+        a {
+          @include font(16, 19);
+        }
+      }
+
+      li:nth-child(3) {
+        padding-left: 7px;
+
+        a {
+          @include font(16, 19);
+        }
+      }
+
+      li:nth-child(4) {
+        padding-left: 7px;
+        padding-top: 19px;
+
+        a {
+          @include font(16, 19);
+        }
+      }
+
+      li:nth-child(5) {
+        padding-left: 7px;
+        padding-top: 19px;
+
+        a {
+          @include font(16, 19);
+        }
+      }
+    }
+
+    .footer__social {
+      padding-top: 31px;
+      width: 145px;
+
+      .footer__social-icon {
+        &--vk {
+          @include size(32, 17);
+          padding-top: 3px;
+        }
+
+        &--ig {
+          @include size(27, 27);
+          
+        }
+
+        &--fb {
+          @include size(14, 27);
+        }
+      }
+    }
   }
 
-  .footer__navigation-list {
-    width: 200px;
-    flex-wrap: wrap;
-  }
+
 }
