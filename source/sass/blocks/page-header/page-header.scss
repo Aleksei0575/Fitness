@@ -31,9 +31,11 @@
 
   .page-header__phone {
     span {
-      padding-top: 2px;
-      font-weight: 700;
-      letter-spacing: 0.03em;
+      @media (min-width: $desktop-width) {
+        padding-top: 2px;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+      }
     }
   }
 }
@@ -119,4 +121,156 @@
 
 .page-header__image {
   margin-top: -5px;
+
+  @media (max-width: 1080px) and (min-width: 1024px) {
+    margin-top: auto;
+    margin-botom: auto;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .page-header {
+    background-image: url("../img/bg-header-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: top 0 right 0;
+    background-size: cover;
+    min-height: 554px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-header-tablet@2x.png");
+    }
+  }
+
+  .page-header__top {
+    padding-top: 38px;
+
+    span {
+      @include font(24, 24);
+    }
+  }
+
+  .page-header__content {
+    width: 324px;
+    padding-right: 30px;
+    padding-left: 0;
+
+    @media (max-width: 1023px) and (min-width: 768px) {
+      padding-right: 0px;
+      margin-right: auto;
+    }
+
+    span:first-child {
+      padding-top: 71px;
+      padding-bottom: 0;
+      @include font(34, 34);
+      //font-weight: 100;
+    }
+
+    span:nth-child(2) {
+      @include font(86, 86);
+    }
+
+    span:nth-child(3) {
+      padding-bottom: 46px;
+      @include font(86, 86);
+    }
+  }
+
+  .page-header__list {
+    bottom: 117px;
+    left: 0;
+    width: 113px;
+  }
+
+  .page-header__button {
+    span:last-child {
+      font-family: $roboto-condensed;
+      @include font(12, 14);
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
+      min-width: 117px;
+    }
+  }
+
+  .page-header__image {
+    width: 324px;
+    height: 390px;
+    padding-top: 25px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-header {
+    background-image: url("../img/bg-header-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: top 0 right 0;
+    background-size: cover;
+    min-height: 491px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-header-mobile@2x.png");
+    }
+  }
+
+  .page-header__top {
+    padding-top: 20px;
+
+    span {
+      @include font(20, 20);
+    }
+  }
+
+  .page-header__content {
+    width: 290px;
+    padding-right: 0;
+    padding-left: 0;
+
+    @media (max-width: 767px) and (min-width: 320px) {
+      margin: auto;
+    }
+
+    span:first-child {
+      padding-top: 70px;
+      padding-bottom: 5px;
+      @include font(28, 28);
+      //font-weight: 100;
+    }
+
+    span:nth-child(2) {
+      @include font(78, 78);
+    }
+
+    span:nth-child(3) {
+      padding-bottom: 46px;
+      @include font(78, 78);
+    }
+  }
+
+  .page-header__list {
+    bottom: 117px;
+    left: 0;
+    width: 113px;
+  }
+
+  .page-header__button {
+    span:last-child {
+      @include font(12, 14);
+
+      padding-top: 21px;
+      padding-bottom: 21px;
+      padding-left: 82px;
+      padding-right: 82px;
+      min-width: 117px;
+    }
+  }
+
+  .page-header__image {
+    display: none;
+  }
 }

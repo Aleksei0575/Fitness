@@ -23,3 +23,9 @@
 
   color: $white;
 }
+
+@media (max-width: $tablet-width) {
+  .social {
+    display: none;
+  }
+}

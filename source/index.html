@@ -77,27 +77,29 @@
     </header>
     <main class="main-content">
       <!--Блок описания фитнес-клуба-->
-      <section class="description container">
-        <div class="description__content">
-          <h2>Тренажерный зал</h2>
-          <p>Просторный зал площадью 900 кв/м</p>
-          <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
-            Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-          <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами.
-            Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
-        </div>
-        <div class="description__gallery">
-          <div class="description__gallery-wrapper">
-            <picture>
-              <source type="image/webp" media="(max-width: 767px)" srcset="img/video-description-mobile@1x.webp 1x, img/video-description-mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/video-description-tablet@1x.webp 1x, img/video-description-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/video-description-desktop@1x.webp 1x, img/video-description-desktop@2x.webp 2x">
+      <section class="description">
+        <div class="description__container">
+          <div class="description__content">
+            <h2>Тренажерный зал</h2>
+            <p>Просторный зал площадью 900 кв/м</p>
+            <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+              Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+            <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами.
+              Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+          </div>
+          <div class="description__gallery">
+            <div class="description__gallery-wrapper">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/video-description-mobile@1x.webp 1x, img/video-description-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/video-description-tablet@1x.webp 1x, img/video-description-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/video-description-desktop@1x.webp 1x, img/video-description-desktop@2x.webp 2x">
 
-              <source media="(max-width: 767px)" srcset="img/video-description-mobile@1x.jpg 1x, img/video-description-mobile@2x.jpg 2x">
-              <source media="(max-width: 1023px)" srcset="img/video-description-tablet@1x.jpg 1x, img/video-description-tablet@2x.jpg 2x">
-              <img src="img/video-description-desktop@1x.jpg" srcset="img/video-description-desktop@2x.jpg 2x" width="364" height="228" alt="Заставка к видео">
-            </picture>
-            <button class="description__button" type="button"></button>
+                <source media="(max-width: 767px)" srcset="img/video-description-mobile@1x.jpg 1x, img/video-description-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)" srcset="img/video-description-tablet@1x.jpg 1x, img/video-description-tablet@2x.jpg 2x">
+                <img src="img/video-description-desktop@1x.jpg" srcset="img/video-description-desktop@2x.jpg 2x" width="364" height="228" alt="Заставка к видео">
+              </picture>
+              <button class="description__button" type="button"></button>
+            </div>
           </div>
         </div>
       </section>
@@ -284,53 +286,51 @@
         <h2>Наши преимущества</h2>
         <div class="advantages__container">
           <div class="advantages__block">
-            <div class="advantages__block-left">
-              <div class="advantages__area">
-                <div>
-                  <span>900</span>
-                  <span>кв/м</span>
-                </div>
-                <div>
-                  <h3>Площадь</h3>
-                  <p>Занимайтесь без очередей и толпучки</p>
-                </div>
+            <div class="advantages__area">
+              <div>
+                <span>900</span>
+                <span>кв/м</span>
               </div>
-              <div class="advantages__comfort">
-                <div>
-                  <span>350</span>
-                  <span>кв/м</span>
-                </div>
-                <div>
-                  <h3>Комфорт</h3>
-                  <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
-                </div>
+              <div>
+                <h3>Площадь</h3>
+                <p>Занимайтесь без очередей и толпучки</p>
               </div>
             </div>
+            <div class="advantages__comfort">
+              <div>
+                <span>350</span>
+                <span>кв/м</span>
+              </div>
+              <div>
+                <h3>Комфорт</h3>
+                <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+              </div>
+            </div>
+
             <div class="advantages__block-center">
               <span>100</span>
               <span>Тренажеров</span>
               <p>Современные тренажеры на все группы мышц</p>
             </div>
-            <div class="advantages__block-right">
-              <div class="advantages__parking">
-                <div>
-                  <span>70</span>
-                  <span>машин</span>
-                </div>
-                <div>
-                  <h3>Собственная парковка</h3>
-                  <p>Вы всегда найдете место для своей машины на нашей парковке</p>
-                </div>
+            
+            <div class="advantages__parking">
+              <div>
+                <span>70</span>
+                <span>машин</span>
               </div>
-              <div class="advantages__experience">
-                <div>
-                  <span>5+</span>
-                  <span>лет</span>
-                </div>
-                <div>
-                  <h3>Тренерский опыт</h3>
-                  <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
-                </div>
+              <div>
+                <h3>Собственная парковка</h3>
+                <p>Вы всегда найдете место для своей машины на нашей парковке</p>
+              </div>
+            </div>
+            <div class="advantages__experience">
+              <div>
+                <span>5+</span>
+                <span>лет</span>
+              </div>
+              <div>
+                <h3>Тренерский опыт</h3>
+                <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
               </div>
             </div>
           </div>

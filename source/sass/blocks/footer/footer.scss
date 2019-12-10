@@ -55,3 +55,36 @@
     }
   }
 }
+
+@media (max-width: $tablet-width) {
+  .footer {
+    padding-top: 43px;
+
+    span {
+      @include font(24, 24);
+    }
+  }
+
+  .footer__navigation {
+    width: 391px;
+  }
+
+  .footer__navigation-link {
+    @include font(14, 16);
+  }
+
+  .footer__social {
+    width: 100px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .footer__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .footer__navigation-list {
+    width: 200px;
+    flex-wrap: wrap;
+  }
+}

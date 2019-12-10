@@ -1,15 +1,16 @@
 .advantages {
-  padding-top: 115px;
-  padding-bottom: 113px;
+  padding-top: 135px;
+  padding-bottom: 22px;
   background-color: $light-gray;
 
   h2 {
-    width: 382px;
+    width: 375px;
     margin: 0 auto;
     padding-bottom: 73px;
-    font-family: $bebas-neue;
-    @include font(49, 49);
-    letter-spacing: 0.04em;
+    font-family: "Bebas Neue","Arial",sans-serif;
+    font-size: 48px;
+    line-height: 49px;
+    letter-spacing: .04em;
     text-transform: uppercase;
   }
 }
@@ -35,96 +36,109 @@
   }
 }
 
-.advantages__block-left {
-  max-width: 38.5%;
+/*Каждый блок самостоятельный*/
+.advantages__area {
   display: flex;
-  flex-direction: column;
+  max-width: 345px;
+  padding-bottom: 75px;
+  align-self: flex-start;
+  border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+
+  position: relative;
+  bottom: 20px;
+
+  div:first-child {
+    padding-left: 27px;
+    position: relative;
+
+    @media (max-width: 1110px) and (min-width: 1024px) {
+      padding-left: 0;
+      margin-left: auto;
+    }
+  }
 
   span:first-child {
+    margin-top: -8px;
     @include font(71, 106);
     font-weight: bold;
     display: block;
+
+    background: linear-gradient(123deg,#ed0233 11%, #003eb7 56%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
-  .advantages__area {
-    display: flex;
-    padding-bottom: 75px;
-    max-width: 345px;
-    border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+  span:last-child {
+    position: absolute;
+    bottom: 0px;
+  }
 
-    div {
-      position: relative;
+  div:last-child {
+    padding-top: 13px;
+    padding-left: 30px;
+    width: 180px;
+
+    @media (max-width: 1110px) and (min-width: 1024px) {
+      padding-left: 0;
+      margin-left: auto;
     }
 
-    div:first-child {
-      padding-left: 27px;
+    h3 {
+      @include font(22, 33);
+      padding-bottom: 5px;
     }
 
-    span:first-child {
-      margin-top: -28px;
-      background: linear-gradient(123deg,#ed0233 11%, #003eb7 56%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    p {
+      @include font(16, 22);
     }
+  }
+}
 
-    span:last-child {
-      position: absolute;
-      bottom: 1px;
-    }
+.advantages__comfort {
+  display: flex;
+  max-width: 351px;
+  //padding-bottom: 75px;
+  align-self: flex-start;
 
-    div:last-child {
-      margin-top: -6px;
-      padding-left: 30px;
-      width: 180px;
+  position: relative;
+  bottom: 91px;
 
-      @media (max-width: 1110px) and (min-width: 1024px) {
-        padding-left: 0;
-        margin-left: auto;
-      }
+  order: 2;
 
-      h3 {
-        @include font(22, 33);
-        padding-bottom: 5px;
-      }
+  div:first-child {
+    padding-left: 20px;
+    position: relative;
 
-      p {
-        @include font(16, 22);
-      }
+    @media (max-width: 1110px) and (min-width: 1024px) {
+      padding-left: 0;
+      margin-left: auto;
     }
   }
 
-  .advantages__comfort {
-    display: flex;
-    padding-top: 53px;
+  span:first-child {
+    margin-top: -8px;
+    @include font(71, 106);
+    font-weight: bold;
+    display: block;
 
-    div {
-      position: relative;
-    }
+    background: linear-gradient(123deg,#ed0233 11%, #003eb7 56%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-    div:first-child {
-      padding-left: 20px;
-    }
+  span:last-child {
+    position: absolute;
+    bottom: 0px;
+  }
 
-    span:first-child {
-      background: linear-gradient(123deg,#ed0233 11%, #003eb7 56%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+  div:last-child {
+    padding-top: 13px;
+    padding-left: 30px;
+    width: 187px;
 
-    span:last-child {
-      position: absolute;
-      bottom: 2px;
-    }
-
-    div:last-child {
-      padding-top: 22px;
-      padding-left: 30px;
-      width: 187px;
-
-      @media (max-width: 1110px) and (min-width: 1024px) {
-        padding-left: 0;
-        margin-left: auto;
-      }
+    @media (max-width: 1110px) and (min-width: 1024px) {
+      padding-left: 0;
+      margin-left: auto;
     }
 
     h3 {
@@ -165,92 +179,52 @@
   }
 
   p {
+    padding-bottom: 59px;
     width: 175px;
     @include font(16, 24);
     color: $white;
   }
 }
 
-.advantages__block-right {
-  max-width: 38.5%;
+.advantages__parking {
+  display: flex;
+  max-width: 345px;
+  padding-bottom: 75px;
+  align-self: flex-start;
+  border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+
+  position: relative;
+  bottom: 20px;
+
+  div:first-child {
+    //padding-left: 27px;
+    position: relative;
+  }
 
   span:first-child {
+    margin-top: -8px;
     @include font(71, 106);
     font-weight: bold;
     display: block;
+
+    background: linear-gradient(123deg,#ed0233 11%, #003eb7 56%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
-  .advantages__parking {
-    display: flex;
-    padding-bottom: 75px;
-    width: 339px;
-    border-bottom: 2px solid rgba(209, 10, 66, 0.2);
-
-    div {
-      position: relative;
-    }
-
-    span:first-child {
-      margin-top: -28px;
-      background: linear-gradient(123deg,#ed0233 11%, #003eb7 56%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    span:last-child {
-      position: absolute;
-      bottom: 1px;
-    }
-
-    div:last-child {
-      margin-top: -6px;
-      padding-left: 30px;
-
-      @media (max-width: 1110px) and (min-width: 1024px) {
-        padding-left: 0;
-        margin-left: auto;
-      }
-
-      h3 {
-        @include font(22, 33);
-        padding-bottom: 5px;
-      }
-
-      p {
-        @include font(16, 22);
-      }
-    }
+  span:last-child {
+    position: absolute;
+    bottom: 0;
   }
 
-  .advantages__experience {
-    display: flex;
-    padding-top: 53px;
-    width: 340px;
+  div:last-child {
+    padding-top: 13px;
+    padding-left: 30px;
+    width: 238px;
 
-    div {
-      position: relative;
-    }
-
-    span:first-child {
-      background: linear-gradient(123deg,#ed0233 11%, #003eb7 56%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    span:last-child {
-      position: absolute;
-      bottom: 2px;
-    }
-
-    div:last-child {
-      padding-top: 22px;
-      padding-left: 30px;
-      //width: 187px;
-
-      @media (max-width: 1110px) and (min-width: 1024px) {
-        padding-left: 0;
-        margin-left: auto;
-      }
+    @media (max-width: 1110px) and (min-width: 1024px) {
+      padding-left: 0;
+      margin-left: auto;
     }
 
     h3 {
@@ -263,3 +237,436 @@
     }
   }
 }
+
+.advantages__experience {
+  display: flex;
+  max-width: 345px;
+  //padding-bottom: 75px;
+  align-self: flex-start;
+
+  position: relative;
+  bottom: 91px;
+
+  order: 3;
+
+  div:first-child {
+    //padding-left: 27px;
+    position: relative;
+  }
+
+  span:first-child {
+    margin-top: -8px;
+    @include font(71, 106);
+    font-weight: bold;
+    display: block;
+
+    background: linear-gradient(123deg,#ed0233 11%, #003eb7 56%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  span:last-child {
+    position: absolute;
+    bottom: 0;
+  }
+
+  div:last-child {
+    padding-top: 13px;
+    padding-left: 30px;
+    width: 239px;
+
+    @media (max-width: 1110px) and (min-width: 1024px) {
+      padding-left: 0;
+      margin-left: auto;
+    }
+
+    h3 {
+      @include font(22, 33);
+      padding-bottom: 5px;
+    }
+
+    p {
+      @include font(16, 22);
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .advantages {
+    padding-top: 95px;
+    padding-bottom: 80px;
+
+    h2 {
+      width: 328px;
+      @include font(42, 42);
+    }
+  }
+
+  .advantages__container {
+    max-width: $tablet-width;
+    margin: 0 auto;
+    padding-left: $tablet-padding;
+    padding-right: $tablet-padding;
+  }
+
+  .advantages__area {
+    max-width: 297px;
+    padding-bottom: 12px;
+
+    bottom: 32px;
+
+    border-bottom: none;
+
+    @media (max-width: 1023px) and (min-width: 830px) {
+      margin: auto;
+    }
+
+    div:first-child {
+      padding-left: 0;
+      position: relative;
+    }
+
+    span:first-child {
+      margin-top: -8px;
+      @include font(58, 87);
+    }
+
+    span:last-child {
+      position: absolute;
+      bottom: 0;
+    }
+
+    div:last-child {
+      padding-top: 7px;
+      padding-left: 29px;
+      width: 100%;
+
+      h3 {
+        @include font(20, 30);
+        padding-bottom: 1px;
+      }
+
+      p {
+        @include font(16, 22);
+      }
+    }
+  }
+
+  .advantages__comfort {
+    max-width: 304px;
+    padding-bottom: 50px;
+
+    bottom: -36px;
+
+    order: 4;
+
+    @media (max-width: 1023px) and (min-width: 830px) {
+      margin: auto;
+    }
+
+    div:first-child {
+      padding-left: 0;
+      position: relative;
+    }
+
+    span:first-child {
+      margin-top: -8px;
+      @include font(58, 87);
+    }
+
+    span:last-child {
+      position: absolute;
+      bottom: 0;
+    }
+
+    div:last-child {
+      padding-top: 7px;
+      padding-left: 29px;
+      width: 100%;
+
+      h3 {
+        @include font(20, 30);
+        padding-bottom: 1px;
+      }
+
+      p {
+        @include font(16, 22);
+      }
+    }
+  }
+
+  .advantages__block-center {
+    width: 442px;
+    max-height: 239px;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+
+    order: 3;
+
+    //@media (max-width: 1023px) and (min-width: 830px) {
+    //  width: 100%;
+    //}
+    @media (max-width: 915px) and (min-width: 830px) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    @media (max-width: 1023px) and (min-width: 916px) {
+      padding-left: 95px;
+      padding-right: 95px;
+    }
+
+    span:first-child {
+      padding-top: 14px;
+      @include font(74, 107);
+    }
+
+    span:nth-child(2) {
+      margin-top: -14px;
+      padding-bottom: 13px;
+      @include font(22, 33);
+    }
+
+    p {
+      padding-bottom: 59px;
+      width: 175px;
+      @include font(16, 24);
+      color: $white;
+    }
+  }
+
+  .advantages__parking {
+    max-width: 324px;
+    padding-bottom: 12px;
+
+    bottom: 32px;
+
+    border-bottom: none;
+
+    order: 1;
+
+    @media (max-width: 1023px) and (min-width: 830px) {
+      margin: auto;
+    }
+
+    div:first-child {
+      padding-left: 0;
+      position: relative;
+    }
+
+    span:first-child {
+      margin-top: -8px;
+      @include font(58, 87);
+    }
+
+    span:last-child {
+      position: absolute;
+      bottom: 0;
+    }
+
+    div:last-child {
+      padding-top: 7px;
+      padding-left: 29px;
+      width: 100%;
+
+      h3 {
+        @include font(20, 30);
+        padding-bottom: 1px;
+      }
+
+      p {
+        @include font(16, 22);
+      }
+    }
+  }
+
+  .advantages__experience {
+    max-width: 324px;
+    padding-bottom: 50px;
+
+    bottom: -36px;
+
+    order: 5;
+
+    @media (max-width: 1023px) and (min-width: 830px) {
+      margin: auto;
+    }
+
+    div:first-child {
+      padding-left: 0;
+      position: relative;
+    }
+
+    span:first-child {
+      margin-top: -8px;
+      @include font(58, 87);
+    }
+
+    span:last-child {
+      position: absolute;
+      bottom: 0;
+    }
+
+    div:last-child {
+      padding-top: 7px;
+      padding-left: 29px;
+      width: 100%;
+
+      h3 {
+        @include font(20, 30);
+        padding-bottom: 1px;
+      }
+
+      p {
+        @include font(16, 22);
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .advantages {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    h2 {
+      width: 245px;
+      @include font(32, 32);
+      letter-spacing: 0.03em;
+    }
+  }
+
+  .advantages__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .advantages__area {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    padding-bottom: 28px;
+    padding-left: 45px;
+    padding-right: 45px;
+
+    @media (max-width: 767px) and (min-width: 321px) {
+      width: 100%;
+      margin: auto;
+    }
+
+    span:last-child {
+      left: 0;
+      right: 0;
+    }
+
+    div:last-child {
+      padding-left: 0;
+    }
+  }
+
+  .advantages__comfort {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    padding-bottom: 29px;
+    padding-left: 45px;
+    padding-right: 45px;
+
+    @media (max-width: 767px) and (min-width: 321px) {
+      width: 100%;
+      margin: auto;
+    }
+
+    span:last-child {
+      left: 0;
+      right: 0;
+    }
+
+    div:last-child {
+      padding-left: 0;
+    }
+  }
+
+
+  .advantages__block-center {
+    max-height: 238px;
+
+    span:first-child {
+      padding-top: 20px;
+    }
+
+    span:nth-child(2) {
+      margin-top: -23px;
+    }
+  }
+
+  .advantages__parking {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 16px;
+
+    @media (max-width: 767px) and (min-width: 321px) {
+      width: 100%;
+      margin: auto;
+    }
+
+    span:last-child {
+      left: 0;
+      right: 0;
+    }
+
+    div:last-child {
+      padding-left: 0;
+
+      p {
+        width: 232px;
+
+        @media (max-width: 767px) and (min-width: 321px) {
+          width: 100%;
+          margin: auto;
+        }
+      }
+    }
+  }
+
+  .advantages__experience {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    padding-bottom: 28px;
+    padding-left: 45px;
+    padding-right: 45px;
+
+    @media (max-width: 767px) and (min-width: 321px) {
+      width: 100%;
+      margin: auto;
+    }
+
+    span:last-child {
+      left: 0;
+      right: 0;
+    }
+
+    div:last-child {
+      padding-left: 0;
+
+      p {
+        width: 235px;
+
+        @media (max-width: 767px) and (min-width: 321px) {
+          width: 100%;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
+

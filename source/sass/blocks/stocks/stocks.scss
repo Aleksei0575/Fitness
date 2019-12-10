@@ -101,7 +101,7 @@
 
 .stocks__block-top {
   padding: 22px 27px 29px;
-  height: 145px;
+  min-height: 145px;
   display: flex;
   flex-direction: column;
 
@@ -151,7 +151,7 @@
 
 .stocks__block-bottom {
   padding: 22px 27px 29px;
-  height: 145px;
+  min-height: 145px;
   display: flex;
   flex-direction: column;
 
@@ -196,5 +196,153 @@
       color: $light-red;
       border-bottom: 1px solid $light-red;
     }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .stocks {
+    padding-top: 95px;
+
+    h2 {
+      width: 96px;
+      padding-bottom: 45px;
+      @include font(42, 42);
+      letter-spacing: 0.03em;
+    }
+  }
+
+  .stocks__block {
+    flex-direction: column;
+  }
+
+  .stocks__block-left {
+    width: 678px;
+    padding-bottom: 30px;
+  }
+
+  .stocks__block-image {
+    width: 399px;
+    height: 462px;
+
+    background-image:
+      url("../img/stocks-tablet@1x.jpg");
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+    min-height: 462px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+        url("../img/stocks-tablet@2x.jpg");
+    }
+  }
+
+  .stocks__block-right {
+    width: 678px;
+    flex-direction: row;
+  }
+
+  .stocks__block-top {
+    width: 324px;
+    min-height: 211px;
+    padding-right: 55px;
+    box-sizing: border-box;
+  }
+
+  .stocks__block-bottom {
+    width: 324px;
+    min-height: 211px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .stocks {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    h2 {
+      width: 73px;
+      padding-bottom: 47px;
+      @include font(32, 32);
+      letter-spacing: 0.03em;
+    }
+  }
+
+  .stocks__block-left {
+    width: 290px;
+    flex-direction: column;
+
+    @media (max-width: 767px) and (min-width: 321px) {
+      width: 100%;
+    }
+  }
+
+  .stocks__block-info {
+    max-height: 299px;
+    padding: 45px 50px;
+    width: 290px;
+    align-items: center;
+    text-align: center;
+
+    @media (max-width: 767px) and (min-width: 321px) {
+      width: 100%;
+    }
+
+    h3 {
+      line-height: 35px;
+    }
+
+    span {
+      padding-bottom: 17px;
+    }
+  }
+
+  .stocks__block-image {
+    width: 290px;
+    height: 299px;
+
+    background-image:
+      url("../img/stocks-mobile@1x.jpg");
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+    min-height: 299px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+        url("../img/stocks-mobile@2x.jpg");
+    }
+
+    @media (max-width: 767px) and (min-width: 321px) {
+      margin: 0 auto;
+    }
+  }
+
+  .stocks__block-right {
+    width: 290px;
+    flex-direction: column;
+
+    @media (max-width: 767px) and (min-width: 321px) {
+      width: 100%;
+    }
+  }
+
+  .stocks__block-top {
+    padding: 36px 41px;
+    margin-bottom: 28px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .stocks__block-bottom {
+    padding: 36px 41px;
+    //margin-bottom: 28px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
   }
 }

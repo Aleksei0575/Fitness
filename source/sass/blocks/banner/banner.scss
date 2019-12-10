@@ -133,8 +133,6 @@
 }
 
 .banner__button {
-  //width: 343px;
-  //font-family: $roboto-condensed;
   @include font(12, 14);
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -175,5 +173,184 @@
 
   @media (max-width: 1364px) and (min-width: 1024px) {
     flex: 1 1;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .banner {
+    padding-top: 100px;
+    padding-bottom: 95px;
+
+    background-image:
+      url("../img/bg-subscription-tablet@1x.png");
+    background-size: 347px 474px;
+    background-position: right top -342px;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+        url("../img/bg-subscription-tablet@1x.png");
+    }
+  }
+
+  .banner__info {
+    padding: 46px 45px;
+    max-height: 292px;
+
+    p:first-child {
+      padding-right: 29px;
+      width: 117px;
+      @include font(52, 52);
+      font-weight: bold;
+    }
+
+    //@media (max-width: 1364px) and (min-width: 1024px) {
+    //  flex: 1 0;
+    //}
+    //
+    //@media (max-width: 1050px) and (min-width: 1024px) {
+    //  padding: 66px;
+    //}
+  }
+
+  .banner__schedule {
+    width: 56px;
+  }
+
+  .banner__date {
+    width: 42px;
+    padding-bottom: 37px;
+
+    span:first-child {
+      padding-top: 6px;
+      padding-bottom: 7px;
+      @include font(12, 8);
+    }
+
+    b {
+      position: absolute;
+      top: 18px;
+      @include font(24, 36);
+    }
+
+    span:nth-child(3) {
+      top: 22px;
+      @include font(10, 15);
+    }
+
+    span:last-child {
+      top: 33px;
+      right: 6px;
+      @include font(10, 15);
+    }
+  }
+
+  .banner__time {
+    width: 56px;
+
+    span {
+      padding-bottom: 7px;
+      @include font(12, 8);
+    }
+
+    b {
+      top: 11px;
+      @include font(24, 36);
+    }
+  }
+
+  .banner__description {
+    margin: 0;
+    padding-bottom: 31px;
+    margin-top: 3px;
+    @include font(12, 18);
+  }
+
+  .banner__button {
+    @include font(10, 12);
+
+    display: inline-block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 51px;
+    padding-right: 51px;
+    min-width: 97px;
+
+    border: 2px solid $white;
+
+    &:hover {
+      color: $blue;
+      border: 2px solid $blue;
+    }
+  }
+
+  .banner__image {
+    background-image:
+      url("../img/banner-tablet@1x.jpg");
+    background-size: 386px 292px;
+    background-position: top right;
+    background-repeat: no-repeat;
+    min-height: 292px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+        url("../img/banner-tablet@2x.jpg");
+    }
+
+    //@media (max-width: 1364px) and (min-width: 1024px) {
+    //  flex: 1 1;
+    //}
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .banner {
+    padding-top: 71px;
+    padding-bottom: 150px;
+
+    flex-direction: column;
+
+    background-image: none;
+  }
+
+  .banner__info {
+    width: 290px;
+
+    p:first-child {
+      padding-right: 27px;
+      width: 117px;
+      font-family: $bebas-neue;
+      @include font(52, 52);
+      letter-spacing: 0.03em;
+    }
+
+    @media (max-width: 1023px) and (min-width: 321px) {
+      margin: auto;
+    }
+  }
+
+  .banner__schedule {
+    width: 56px;
+  }
+
+  .banner__date {
+    width: 42px;
+  }
+
+  .banner__image {
+    width: 290px;
+    background-image: url("../img/banner-mobile@1x.jpg");
+    background-size: 290px 292px;
+    background-position: top right;
+    background-repeat: no-repeat;
+    min-height: 292px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/banner-mobile@2x.jpg");
+    }
+
+    @media (max-width: 1023px) and (min-width: 321px) {
+      margin: auto;
+    }
   }
 }

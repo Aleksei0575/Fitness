@@ -23,3 +23,37 @@
     }
   }
 }
+
+@media (max-width: $tablet-width) {
+  .feedback {
+    width: 100%;
+
+    h2 {
+      width: 315px;
+      padding-left: 133px;
+      @include font(42, 42);
+
+      @media (max-width: 1023px) and (min-width: 769px) {
+        padding-left: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .feedback {
+    h2 {
+      width: 244px;
+      padding-left: 15px;
+      padding-bottom: 3px;
+      @include font(32, 32);
+      letter-spacing: 0.03em;
+    }
+
+    @media (max-width: 767px) and (min-width: 321px) {
+      margin: auto;
+    }
+  }
+}

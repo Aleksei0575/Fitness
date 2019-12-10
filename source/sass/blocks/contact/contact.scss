@@ -2,3 +2,15 @@
   padding-top: 70px;
   display: flex;
 }
+
+@media (max-width: $tablet-width) {
+  .contact {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .contact {
+    padding-top: 35px;
+  }
+}

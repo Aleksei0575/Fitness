@@ -1,6 +1,14 @@
 .description {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.description__container {
+  max-width: 1460px;
+  margin: 0 auto;
+  padding-left: $desktop-padding;
+  padding-right: $desktop-padding;
+
   display: flex;
   justify-content: space-between;
 }
@@ -92,4 +100,188 @@
   background-color: transparent;
   border: none;
   outline: none;
+}
+
+@media (max-width: $tablet-width) {
+  .description {
+    padding-top: 95px;
+    padding-bottom: 100px;
+  }
+
+  .description__container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding-left: $tablet-padding;
+    padding-right: $tablet-padding;
+
+    flex-direction: column;
+  }
+
+  .description__content {
+    width: 100%;
+    padding-left: 0;
+
+    h2 {
+      width: 285px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 0;
+      @include font(42, 42);
+      letter-spacing: 0.04em;
+      text-align: center;
+    }
+
+    p:nth-child(2) {
+      @include font(18, 27);
+      padding-bottom: 34px;
+      text-align: center;
+    }
+
+    p:nth-child(3) {
+      margin-left: auto;
+      margin-right: auto;
+      @include font(16, 24);
+      width: 512px;
+      padding-bottom: 45px;
+      text-align: center;
+    }
+
+    p:nth-child(4) {
+      display: none;
+    }
+  }
+
+  .description__gallery {
+    width: 678px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: url("../img/img-description-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top 0 right 0;
+    background-size: 678px 345px;
+    min-height: 345px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/img-description-tablet@2x.jpg");
+    }
+  }
+
+  .description__gallery-wrapper {
+    width: 266px;
+    padding-top: 260px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .description__button {
+    background-image: url("../img/description-button-tablet.png");
+
+    background-size: 73px 73px;
+    width: 77px;
+    height: 77px;
+
+    bottom: 42px;
+    left: 35%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .description {
+    padding-top: 67px;
+    padding-bottom: 70px;
+  }
+
+  .description__container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .description__content {
+    width: 100%;
+    padding-left: 0;
+
+    h2 {
+      width: 211px;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 15px;
+      padding-bottom: 8px;
+      @include font(32, 32);
+      letter-spacing: 0.03em;
+      //text-align: center;
+
+      @media (max-width: 767px) and (min-width: 321px) {
+        margin: auto;
+      }
+    }
+
+    p:nth-child(2) {
+      @include font(18, 27);
+      padding-bottom: 25px;
+      padding-left: 15px;
+
+      @media (max-width: 767px) and (min-width: 321px) {
+        margin: auto;
+      }
+    }
+
+    p:nth-child(3) {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 15px;
+      @include font(16, 24);
+      width: 261px;
+      padding-bottom: 33px;
+      text-align: left;
+
+      @media (max-width: 767px) and (min-width: 321px) {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    p:nth-child(4) {
+      display: none;
+    }
+  }
+
+  .description__gallery {
+    width: 100%;
+    padding-top: 92px;
+    margin-left: 0;
+    margin-right: 0;
+
+    background-image: url("../img/img-description-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top 0 right 0;
+    background-size: 320px 313px;
+    min-height: 313px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("img/img-description-mobile@2x.jpg");
+    }
+
+    @media (max-width: 767px) and (min-width: 321px) {
+      background-position: top 0 center;
+    }
+  }
+
+  .description__gallery-wrapper {
+    width: 320px;
+    padding-top: 260px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 767px) and (min-width: 321px) {
+      margin: auto;
+    }
+  }
+
+  .description__button {
+    bottom: 43px;
+    left: 38%;
+  }
 }
