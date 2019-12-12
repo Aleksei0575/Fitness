@@ -1,21 +1,32 @@
 .slider {
   position: relative;
+  //overflow: hidden;
+  width: 1166px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider__wrapper {
+  width: 1166px;
+  overflow: hidden;
+  position: relative;
+  
 }
 
 .slider__list {
   @include reset-ul;
   display: flex;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
   justify-content: space-between;
+  transition: transform 0.7s ease;
 }
 
 .slider__item {
-  width: 22.4%;
+  //width: 22.4%;
   position: relative;
-}
 
-.slider__link {
-  //position: relative;
+  flex: 0 0 25.9%;
+  max-width: 25.9%;
 
   h3 {
     margin: 0;
@@ -30,8 +41,95 @@
     color: $white;
   }
 
+  @media (max-width: 1365px) and (min-width: 1024px) {
+    h3 {
+      margin: auto;
+      left: 0;
+      right: 0;
+      width: fit-content;
+    }
+  }
+
+  /*Блок для hover*/
+  div {
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 52px 41px;
+
+    position: absolute;
+    box-sizing: border-box;
+    min-height: 100%;
+
+    background: rgba(16, 38, 84, 0.89);
+  }
+
+  b {
+    display: block;
+    text-align: center;
+    @include font(18, 27);
+    color: $white;
+  }
+
+  span {
+    display: block;
+    text-align: center;
+    text-align: center;
+    @include font(16, 24);
+
+    color: #85bdcc;
+  }
+
+  ul {
+    padding: 0;
+    padding-left: 29px;
+    padding-top: 30px;
+    list-style-type: disc;
+
+    color: $white;
+
+    li:first-child {
+      padding-bottom: 12px;
+    }
+
+    li:nth-child(2) {
+      padding-bottom: 13px;
+    }
+  }
+
+  div {
+    display: none;
+  }
+
+  &:hover div {
+    display: block;
+  }
+
+  &:hover h3 {
+    display: none;
+  }
+
+  @media (max-width: 1365px) and (min-width: 1024px) {
+    div {
+      justify-content: center;
+      padding: 0;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  /*Блок hover окончание*/
+
   &--active {
     div {
+      width: 88%;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
@@ -45,12 +143,17 @@
       background: rgba(16, 38, 84, 0.89);
     }
 
-    h3 {
-      position: initial;
+    b {
+      display: block;
+      text-align: center;
+      @include font(18, 27);
+      color: $white;
     }
 
     span {
-      padding-bottom: 30px;
+      display: block;
+      text-align: center;
+      text-align: center;
       @include font(16, 24);
 
       color: #85bdcc;
@@ -59,6 +162,7 @@
     ul {
       padding: 0;
       padding-left: 29px;
+      padding-top: 30px;
       list-style-type: disc;
 
       color: $white;
@@ -70,6 +174,10 @@
       li:nth-child(2) {
         padding-bottom: 13px;
       }
+    }
+
+    h3 {
+      display: none;
     }
   }
 
@@ -87,15 +195,20 @@
       text-align: center;
     }
   }
-
-  &:hover {
-
-  }
 }
 
 .slider__link-two {
   h3 {
     left: 69px;
+  }
+
+  @media (max-width: 1365px) and (min-width: 1024px) {
+    h3 {
+      margin: auto;
+      left: 0;
+      right: 0;
+      width: fit-content;
+    }
   }
 }
 
@@ -154,7 +267,7 @@
   }
 
   &--next {
-    right: -57px;
+    right: -59px;
 
     &::before {
       content: "";
