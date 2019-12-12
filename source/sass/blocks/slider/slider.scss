@@ -224,6 +224,7 @@
 
   &--prev {
     left: -59px;
+    outline: none;
 
     &::before {
       content: "";
@@ -268,6 +269,7 @@
 
   &--next {
     right: -59px;
+    outline: none;
 
     &::before {
       content: "";

@@ -121,6 +121,11 @@
     min-width: 117px;
 
     border: 4px solid #ffffff;
+
+    &:hover {
+      color: $light-red;
+      border: 4px solid $light-red;
+    }
   }
 }
 
