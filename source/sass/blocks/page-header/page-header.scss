@@ -35,6 +35,11 @@
         padding-top: 2px;
         font-weight: 700;
         letter-spacing: 0.03em;
+
+        &:hover,
+        &:active {
+          color: $blue;
+        }
       }
     }
   }
