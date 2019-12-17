@@ -3,10 +3,10 @@
 
   h2 {
     //width: 151px;
+    @include font(49, 49);
     margin: 0 auto;
     padding-bottom: 55px;
     font-family: $bebas-neue;
-    @include font(49, 49);
     letter-spacing: 0.04em;
     text-transform: uppercase;
   }
@@ -15,10 +15,10 @@
 @media (max-width: $tablet-width) {
   .trainers {
     h2 {
+      @include font(42, 42);
       width: 129px;
       padding-bottom: 45px;
       margin: 0 auto;
-      @include font(42, 42);
       letter-spacing: 0.03em;
     }
   }
@@ -29,10 +29,10 @@
     padding-bottom: 47px;
 
     h2 {
+      @include font(32, 32);
       width: 99px;
       padding-bottom: 45px;
       margin: 0 auto;
-      @include font(32, 32);
       letter-spacing: 0.03em;
     }
   }

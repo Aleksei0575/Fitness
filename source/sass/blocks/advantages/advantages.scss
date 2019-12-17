@@ -4,13 +4,14 @@
   background-color: $light-gray;
 
   h2 {
-    width: 375px;
+    //width: 375px;
+    text-align: center;
     margin: 0 auto;
     padding-bottom: 73px;
-    font-family: "Bebas Neue","Arial",sans-serif;
+    font-family: "Bebas Neue", "Arial", sans-serif;
     font-size: 48px;
     line-height: 49px;
-    letter-spacing: .04em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
   }
 }
@@ -50,6 +51,7 @@
   div:first-child {
     padding-left: 27px;
     position: relative;
+    align-self: flex-start;
 
     @media (max-width: 1110px) and (min-width: 1024px) {
       padding-left: 0;
@@ -58,19 +60,19 @@
   }
 
   span:first-child {
-    margin-top: -8px;
     @include font(71, 106);
+    margin-top: -8px;
     font-weight: bold;
     display: block;
 
-    background: linear-gradient(123deg,#ed0233 11%, #003eb7 56%);
+    background: linear-gradient(123deg, #ed0233 11%, #003eb7 56%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   span:last-child {
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
   }
 
   div:last-child {
@@ -108,6 +110,7 @@
   div:first-child {
     padding-left: 20px;
     position: relative;
+    align-self: flex-start;
 
     @media (max-width: 1110px) and (min-width: 1024px) {
       padding-left: 0;
@@ -116,19 +119,19 @@
   }
 
   span:first-child {
-    margin-top: -8px;
     @include font(71, 106);
+    margin-top: -8px;
     font-weight: bold;
     display: block;
 
-    background: linear-gradient(123deg,#ed0233 11%, #003eb7 56%);
+    background: linear-gradient(123deg, #ed0233 11%, #003eb7 56%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   span:last-child {
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
   }
 
   div:last-child {
@@ -156,7 +159,7 @@
   width: 23%;
   max-height: 307px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -164,24 +167,24 @@
   background-color: #1c3374;
 
   span:first-child {
-    padding-top: 34px;
     @include font(74, 111);
+    padding-top: 34px;
     font-weight: bold;
     color: $white;
   }
 
   span:nth-child(2) {
+    @include font(26, 39);
     margin-top: -14px;
     padding-bottom: 30px;
-    @include font(26, 39);
     font-weight: bold;
     color: $white;
   }
 
   p {
+    @include font(16, 24);
     padding-bottom: 59px;
     width: 175px;
-    @include font(16, 24);
     color: $white;
   }
 }
@@ -199,15 +202,16 @@
   div:first-child {
     //padding-left: 27px;
     position: relative;
+    align-self: flex-start;
   }
 
   span:first-child {
-    margin-top: -8px;
     @include font(71, 106);
+    margin-top: -8px;
     font-weight: bold;
     display: block;
 
-    background: linear-gradient(123deg,#ed0233 11%, #003eb7 56%);
+    background: linear-gradient(123deg, #ed0233 11%, #003eb7 56%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -252,15 +256,16 @@
   div:first-child {
     //padding-left: 27px;
     position: relative;
+    align-self: flex-start;
   }
 
   span:first-child {
-    margin-top: -8px;
     @include font(71, 106);
+    margin-top: -8px;
     font-weight: bold;
     display: block;
 
-    background: linear-gradient(123deg,#ed0233 11%, #003eb7 56%);
+    background: linear-gradient(123deg, #ed0233 11%, #003eb7 56%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -297,8 +302,8 @@
     padding-bottom: 80px;
 
     h2 {
-      width: 328px;
       @include font(42, 42);
+      width: 328px;
     }
   }
 
@@ -327,8 +332,8 @@
     }
 
     span:first-child {
-      margin-top: -8px;
       @include font(58, 87);
+      margin-top: -8px;
     }
 
     span:last-child {
@@ -370,8 +375,8 @@
     }
 
     span:first-child {
-      margin-top: -8px;
       @include font(58, 87);
+      margin-top: -8px;
     }
 
     span:last-child {
@@ -417,20 +422,20 @@
     }
 
     span:first-child {
-      padding-top: 14px;
       @include font(74, 107);
+      padding-top: 14px;
     }
 
     span:nth-child(2) {
+      @include font(22, 33);
       margin-top: -14px;
       padding-bottom: 13px;
-      @include font(22, 33);
     }
 
     p {
+      @include font(16, 24);
       padding-bottom: 59px;
       width: 175px;
-      @include font(16, 24);
       color: $white;
     }
   }
@@ -455,8 +460,8 @@
     }
 
     span:first-child {
-      margin-top: -8px;
       @include font(58, 87);
+      margin-top: -8px;
     }
 
     span:last-child {
@@ -498,8 +503,8 @@
     }
 
     span:first-child {
-      margin-top: -8px;
       @include font(58, 87);
+      margin-top: -8px;
     }
 
     span:last-child {
@@ -530,8 +535,8 @@
     padding-bottom: 70px;
 
     h2 {
-      width: 245px;
       @include font(32, 32);
+      width: 245px;
       letter-spacing: 0.03em;
     }
   }
@@ -668,5 +673,3 @@
     }
   }
 }
-
-

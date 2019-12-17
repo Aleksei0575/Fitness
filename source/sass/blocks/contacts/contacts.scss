@@ -2,13 +2,13 @@
   width: 50%;
 
   h2 {
-    width: 177px;
     @include reset;
+    @include font(49, 49);
+    width: 177px;
     padding-top: 65px;
     padding-bottom: 47px;
     padding-left: 120px;
     font-family: $bebas-neue;
-    @include font(49, 49);
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
@@ -41,8 +41,8 @@
   border-right: 1px solid #74819c;
 
   b:first-child {
-    display: block;
     @include font(16, 18);
+    display: block;
     padding-bottom: 9px;
   }
 
@@ -52,8 +52,8 @@
   }
 
   b:nth-child(3) {
-    display: block;
     @include font(16, 18);
+    display: block;
     padding-bottom: 8px;
   }
 }
@@ -63,8 +63,8 @@
   max-height: 106px;
 
   b:first-child {
-    display: block;
     @include font(16, 18);
+    display: block;
     padding-bottom: 9px;
   }
 
@@ -74,8 +74,8 @@
   }
 
   b:nth-child(3) {
-    display: block;
     @include font(16, 18);
+    display: block;
     padding-bottom: 8px;
   }
 }
@@ -86,13 +86,12 @@
     padding-bottom: 68px;
 
     h2 {
-      width: 151px;
       @include reset;
+      @include font(42, 42);
+      width: 151px;
       padding-top: 65px;
       padding-bottom: 47px;
       padding-left: 133px;
-
-      @include font(42, 42);
       letter-spacing: 0.03em;
 
       @media (max-width: 1023px) and (min-width: 769px) {
@@ -125,8 +124,8 @@
     }
 
     p {
-      padding-bottom: 19px;
       @include font(18, 27);
+      padding-bottom: 19px;
     }
 
     b:nth-child(3) {
@@ -145,8 +144,8 @@
     }
 
     p {
-      padding-bottom: 19px;
       @include font(18, 27);
+      padding-bottom: 19px;
     }
 
     b:nth-child(3) {
@@ -159,10 +158,10 @@
 @media (max-width: $mobile-width) {
   .contacts {
     h2 {
+      @include font(32, 32);
       width: 155px;
       padding-left: 15px;
       //padding-bottom: 3px;
-      @include font(32, 32);
       letter-spacing: 0.03em;
     }
   }

@@ -50,7 +50,7 @@
             <picture>
               <source type="image/webp" media="(max-width: 1023px)" srcset="img/img-header-tablet@1x.webp 1x, img/img-header-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/img-header-desktop@1x.webp 1x, img/img-header-desktop@2x.webp 2x">
-              
+
               <source media="(max-width: 1023px)" srcset="img/img-header-tablet@1x.jpg 1x, img/img-header-tablet@2x.jpg 2x">
               <img src="img/img-header-desktop@1x.jpg" srcset="img/img-header-desktop@2x.jpg 2x" width="500" height="556" alt="Изображение спортсмена">
             </picture>
@@ -79,6 +79,7 @@
     </header>
     <main class="main-content">
       <!--Блок описания фитнес-клуба-->
+
       <section class="description">
         <div class="description__container">
           <div class="description__content">
@@ -100,7 +101,7 @@
                 <source media="(max-width: 1023px)" srcset="img/video-description-tablet@1x.jpg 1x, img/video-description-tablet@2x.jpg 2x">
                 <img src="img/video-description-desktop@1x.jpg" srcset="img/video-description-desktop@2x.jpg 2x" width="364" height="228" alt="Заставка к видео">
               </picture>
-              <button class="description__button" type="button"></button>
+              <button class="description__button" type="button" name="play"></button>
             </div>
           </div>
         </div>
@@ -130,7 +131,7 @@
                 </b>
               </a>
               <div class="subscription__button-block">
-                <a class="subscription__button" href="subscription/coaches.html">
+                <a class="subscription__button" href="#">
                   <span>Купить абонемент</span>
                 </a>
               </div>
@@ -148,7 +149,7 @@
                 </b>
               </a>
               <div class="subscription__button-block">
-                <a class="subscription__button" href="subscription/day.html">
+                <a class="subscription__button" href="#">
                   <span>Купить абонемент</span>
                 </a>
               </div>
@@ -166,7 +167,7 @@
                 </b>
               </a>
               <div class="subscription__button-block">
-                <a class="subscription__button" href="subscription/full.html">
+                <a class="subscription__button" href="#">
                   <span>Купить абонемент</span>
                 </a>
               </div>
@@ -176,28 +177,30 @@
       </section>
 
       <!--Баннер с рекламой соревнований-->
-      <article class="banner container">
+      <article class="banner">
         <h2 class="visually-hidden">Ежегодные соревнования по CrossFit</h2>
-        <div class="banner__info">
-          <p>SUPER GAMES</p>
-          <div class="banner__schedule">
-            <div class="banner__date">
-              <span>Дата</span>
-              <b>7</b>
-              <span>Марта</span>
-              <span>2019</span>
+        <div class="banner__container">
+          <div class="banner__info">
+            <p>SUPER GAMES</p>
+            <div class="banner__schedule">
+              <div class="banner__date">
+                <span>Дата</span>
+                <b>7</b>
+                <span>Марта</span>
+                <span>2019</span>
+              </div>
+              <div class="banner__time">
+                <span>Время</span>
+                <b>12:00</b>
+              </div>
             </div>
-            <div class="banner__time">
-              <span>Время</span>
-              <b>12:00</b>
-            </div>
+            <p class="banner__description">Ежегодные соревнования по CrossFit</p>
+            <a class="banner__button" href="games/form.html">
+              <span>заполнить заявку</span>
+            </a>
           </div>
-          <p class="banner__description">Ежегодные соревнования по CrossFit</p>
-          <a class="banner__button" href="games/form.html">
-            <span>заполнить заявку</span>
-          </a>
+          <div class="banner__image"></div>
         </div>
-        <div class="banner__image"></div>
       </article>
 
       <!--Блок с тренерами-->
@@ -445,7 +448,7 @@
               <span>Тренажеров</span>
               <p>Современные тренажеры на все группы мышц</p>
             </div>
-            
+
             <div class="advantages__parking">
               <div>
                 <span>70</span>
@@ -474,28 +477,28 @@
       <section class="stocks container">
         <h2>Акции</h2>
         <div class="stocks__block">
-         <div class="stocks__block-left">
-           <div class="stocks__block-info">
-             <h3>Год</h3>
-             <span>4999</span>
-             <p>Безлимитный абонемент в тренажерный зал</p>
-             <a href="stocks.html">подробнее</a>
-           </div>
-           <div class="stocks__block-image"></div>
-         </div>
-         <div class="stocks__block-right">
-           <div class="stocks__block-top">
-             <h3>Месяц бесплатно</h3>
-             <p>Приведи друга, получи абонемент в подарок</p>
-             <a href="stocks.html">подробнее</a>
-           </div>
-           <div class="stocks__block-bottom">
-             <h3>Скидка 20%</h3>
-             <p>Корпоративный фитнес с командой</p>
-             <a href="stocks.html">подробнее</a>
-           </div>
-         </div>
-       </div>
+          <div class="stocks__block-left">
+            <div class="stocks__block-info">
+              <h3>Год</h3>
+              <span>4999</span>
+              <p>Безлимитный абонемент в тренажерный зал</p>
+              <a href="stocks.html">подробнее</a>
+            </div>
+            <div class="stocks__block-image"></div>
+          </div>
+          <div class="stocks__block-right">
+            <div class="stocks__block-top">
+              <h3>Месяц бесплатно</h3>
+              <p>Приведи друга, получи абонемент в подарок</p>
+              <a href="stocks.html">подробнее</a>
+            </div>
+            <div class="stocks__block-bottom">
+              <h3>Скидка 20%</h3>
+              <p>Корпоративный фитнес с командой</p>
+              <a href="stocks.html">подробнее</a>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!--Блок отзывов-->
@@ -548,20 +551,20 @@
         <section class="contact__data contacts">
           <div class="contacts__wrapper">
             <h2>Контакты</h2>
-             <div class="contacts__block">
-               <div class="contacts__block-left">
-                 <b>Адрес:</b>
-                 <p>г. Омск, ул. 60 лет Октября, 7</p>
-                 <b>График работы:</b>
-                 <p>Пн-Вс: с 8:00 до 22:00</p>
-               </div>
-               <div class="contacts__block-right">
-                 <b>Телефон:</b>
-                 <p>8-800-555-55-55</p>
-                 <b>Email:</b>
-                 <p>omsk@supergym.ru</p>
-               </div>
-             </div>
+            <div class="contacts__block">
+              <div class="contacts__block-left">
+                <b>Адрес:</b>
+                <p>г. Омск, ул. 60 лет Октября, 7</p>
+                <b>График работы:</b>
+                <p>Пн-Вс: с 8:00 до 22:00</p>
+              </div>
+              <div class="contacts__block-right">
+                <b>Телефон:</b>
+                <p>8-800-555-55-55</p>
+                <b>Email:</b>
+                <p>omsk@supergym.ru</p>
+              </div>
+            </div>
           </div>
         </section>
       </section>

@@ -7,10 +7,10 @@
     //margin: 0 auto;
     //padding-bottom: 56px;
     @include reset;
+    @include font(49, 49);
     padding-top: 65px;
     padding-left: $desktop-padding;
     font-family: $bebas-neue;
-    @include font(49, 49);
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
@@ -29,9 +29,9 @@
     width: 100%;
 
     h2 {
+      @include font(42, 42);
       width: 315px;
       padding-left: 133px;
-      @include font(42, 42);
 
       @media (max-width: 1023px) and (min-width: 769px) {
         padding-left: 0;
@@ -45,10 +45,10 @@
 @media (max-width: $mobile-width) {
   .feedback {
     h2 {
+      @include font(32, 32);
       width: 244px;
       padding-left: 15px;
       padding-bottom: 3px;
-      @include font(32, 32);
       letter-spacing: 0.03em;
     }
 

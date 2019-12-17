@@ -4,9 +4,9 @@
   font-family: "Roboto Condensed";
   font-display: swap;
   src: local("Roboto Condensed Light"),
-  local("RobotoCondensed-Light"),
-  url("../fonts/RobotoCondensed-Light.woff2") format("woff2"),
-  url("../fonts/RobotoCondensed-Light.woff") format("woff");
+    local("RobotoCondensed-Light"),
+    url("../fonts/RobotoCondensed-Light.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-Light.woff") format("woff");
 }
 
 @font-face {
@@ -15,9 +15,9 @@
   font-family: "Roboto Condensed";
   font-display: swap;
   src: local("Roboto Condensed"),
-  local("Roboto-Condensed"),
-  url("../fonts/Roboto-Condensed.woff2") format("woff2"),
-  url("../fonts/Roboto-Condensed.woff") format("woff");
+    local("Roboto-Condensed"),
+    url("../fonts/Roboto-Condensed.woff2") format("woff2"),
+    url("../fonts/Roboto-Condensed.woff") format("woff");
 }
 
 @font-face {
@@ -26,9 +26,9 @@
   font-family: "Roboto Condensed";
   font-display: swap;
   src: local("Roboto Condensed Bold"),
-  local("RobotoCondensed-Bold"),
-  url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"),
-  url("../fonts/RobotoCondensed-Bold.woff") format("woff");
+    local("RobotoCondensed-Bold"),
+    url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -37,9 +37,9 @@
   font-family: "Bebas Neue";
   font-display: swap;
   src: local("Bebas Neue Regular"),
-  local("BebasNeue-Regular"),
-  url("../fonts/BebasNeue-Regular.woff2") format("woff2"),
-  url("../fonts/BebasNeue-Regular.woff") format("woff");
+    local("BebasNeue-Regular"),
+    url("../fonts/BebasNeue-Regular.woff2") format("woff2"),
+    url("../fonts/BebasNeue-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -48,7 +48,7 @@
   font-family: "Bebas Neue";
   font-display: swap;
   src: local("Bebas Neue Bold"),
-  local("BebasNeue-Bold"),
-  url("../fonts/BebasNeue-Bold.woff2") format("woff2"),
-  url("../fonts/BebasNeue-Bold.woff") format("woff");
+    local("BebasNeue-Bold"),
+    url("../fonts/BebasNeue-Bold.woff2") format("woff2"),
+    url("../fonts/BebasNeue-Bold.woff") format("woff");
 }

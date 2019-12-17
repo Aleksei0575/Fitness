@@ -3,19 +3,20 @@
 // Скролл страницы
 var buttonHeader = document.querySelector('.page-header__button');
 
-buttonHeader.addEventListener('click', function (evt) {
-  evt.preventDefault();
+if (buttonHeader) {
+  buttonHeader.addEventListener('click', function (evt) {
+    evt.preventDefault();
 
-  var blockSubscription = buttonHeader.getAttribute('href');
+    var blockSubscription = buttonHeader.getAttribute('href');
 
-  document.querySelector(blockSubscription).scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
+    document.querySelector(blockSubscription).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
   });
-});
+}
 
-
-//Слайдер
+// Слайдер
 var mySwiper = new Swiper ('.swiper-container', {
   // Optional parameters
   // direction: 'vertical',
@@ -57,13 +58,13 @@ var swiper = new Swiper('.swiper-container', {
     // when window width is >= 640px
     1366: {
       slidesPerView: 4,
-      spaceBetween: 10
+      spaceBetween: 5
     }
   }
 });
 
 
-//Старый слайдер
+// Старый слайдер
 // var multiItemSlider = (function () {
 //   return function (selector, config) {
 //

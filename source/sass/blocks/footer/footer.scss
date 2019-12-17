@@ -1,4 +1,7 @@
 .footer {
+  //width: 100%;
+  //position: absolute;
+  //bottom: 0;
   padding-top: 39px;
   padding-bottom: 39px;
   background-color: #030a1a;
@@ -9,8 +12,8 @@
   justify-content: space-between;
 
   span {
-    font-family: $bebas-neue;
     @include font(26, 26);
+    font-family: $bebas-neue;
     letter-spacing: 0.02em;
     text-transform: uppercase;
 
@@ -107,12 +110,12 @@
     position: relative;
 
     span {
-      position: absolute;
       @include font(20, 20);
+      position: absolute;
       top: 5px;
       left: 15px;
     }
-    
+
     .footer__navigation {
       padding-left: 0;
     }
@@ -122,7 +125,6 @@
       //width: 200px;
       //flex-wrap: wrap;
       column-count: 2;
-      display: block;
 
       li:first-child {
         margin-top: 40px;
@@ -179,7 +181,6 @@
 
         &--ig {
           @include size(27, 27);
-          
         }
 
         &--fb {
@@ -188,6 +189,4 @@
       }
     }
   }
-
-
 }

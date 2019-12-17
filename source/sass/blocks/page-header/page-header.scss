@@ -21,8 +21,8 @@
   justify-content: space-between;
 
   span {
-    font-family: $bebas-neue;
     @include font(26, 26);
+    font-family: $bebas-neue;
     letter-spacing: 0.02em;
     text-transform: uppercase;
 
@@ -63,7 +63,7 @@
   position: relative;
 
   @media (max-width: 1250px) and (min-width: 1024px) {
-    padding-right: 0px;
+    padding-right: 0;
     margin-right: auto;
   }
 
@@ -76,9 +76,9 @@
   }
 
   span:first-child {
+    @include font(49, 49);
     padding-top: 113px;
     padding-bottom: 9px;
-    @include font(49, 49);
     font-weight: 100;
   }
 
@@ -88,8 +88,8 @@
   }
 
   span:nth-child(3) {
-    padding-bottom: 59px;
     @include font(109, 109);
+    padding-bottom: 59px;
     font-weight: 700;
   }
 }
@@ -107,8 +107,8 @@
 
 .page-header__button {
   span:last-child {
-    font-family: $roboto-condensed;
     @include font(12, 14);
+    font-family: $roboto-condensed;
     font-weight: 700;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -165,14 +165,14 @@
     padding-left: 0;
 
     @media (max-width: 1023px) and (min-width: 768px) {
-      padding-right: 0px;
+      padding-right: 0;
       margin-right: auto;
     }
 
     span:first-child {
+      @include font(34, 34);
       padding-top: 71px;
       padding-bottom: 0;
-      @include font(34, 34);
       //font-weight: 100;
     }
 
@@ -181,8 +181,8 @@
     }
 
     span:nth-child(3) {
-      padding-bottom: 46px;
       @include font(86, 86);
+      padding-bottom: 46px;
     }
   }
 
@@ -194,8 +194,8 @@
 
   .page-header__button {
     span:last-child {
-      font-family: $roboto-condensed;
       @include font(12, 14);
+      font-family: $roboto-condensed;
       font-weight: 700;
       letter-spacing: 0.05em;
       text-transform: uppercase;
@@ -246,9 +246,9 @@
     }
 
     span:first-child {
+      @include font(28, 28);
       padding-top: 70px;
       padding-bottom: 5px;
-      @include font(28, 28);
       //font-weight: 100;
     }
 
@@ -257,8 +257,8 @@
     }
 
     span:nth-child(3) {
-      padding-bottom: 46px;
       @include font(78, 78);
+      padding-bottom: 46px;
     }
   }
 
