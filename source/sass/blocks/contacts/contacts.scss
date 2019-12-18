@@ -51,7 +51,7 @@
     padding-bottom: 19px;
   }
 
-  b:nth-child(3) {
+  b:nth-child(3n) {
     @include font(16, 18);
     display: block;
     padding-bottom: 8px;
@@ -73,7 +73,7 @@
     padding-bottom: 19px;
   }
 
-  b:nth-child(3) {
+  b:nth-child(3n) {
     @include font(16, 18);
     display: block;
     padding-bottom: 8px;
@@ -128,7 +128,7 @@
       padding-bottom: 19px;
     }
 
-    b:nth-child(3) {
+    b:nth-child(3n) {
       @include font(20, 30);
       padding-bottom: 8px;
     }
@@ -148,7 +148,7 @@
       padding-bottom: 19px;
     }
 
-    b:nth-child(3) {
+    b:nth-child(3n) {
       @include font(20, 30);
       padding-bottom: 8px;
     }

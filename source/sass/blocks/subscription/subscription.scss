@@ -99,7 +99,7 @@
     color: $blue;
   }
 
-  span:nth-child(2) {
+  span:nth-child(2n) {
     @include font(16, 24);
     padding-bottom: 66px;
     display: block;
@@ -124,6 +124,7 @@
       display: block;
       top: 73px;
       left: -15px;
+      right: -15px;
 
       color: #e8e8e8;
       opacity: 0.48;
@@ -249,7 +250,7 @@
       font-weight: 700;
     }
 
-    span:nth-child(2) {
+    span:nth-child(2n) {
       padding-bottom: 55px;
     }
 

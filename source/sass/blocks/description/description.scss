@@ -36,19 +36,19 @@
     text-transform: uppercase;
   }
 
-  p:nth-child(2) {
+  p:nth-child(2n) {
     @include reset;
     @include font(18, 27);
     padding-bottom: 39px;
   }
 
-  p:nth-child(3) {
+  p:nth-child(2n + 1) {
     @include reset;
     @include font(16, 24);
     padding-bottom: 8px;
   }
 
-  p:nth-child(4) {
+  p:nth-child(4n) {
     @include reset;
     @include font(16, 24);
   }
@@ -130,13 +130,13 @@
       text-align: center;
     }
 
-    p:nth-child(2) {
+    p:nth-child(2n) {
       @include font(18, 27);
       padding-bottom: 34px;
       text-align: center;
     }
 
-    p:nth-child(3) {
+    p:nth-child(2n + 1) {
       @include font(16, 24);
       margin-left: auto;
       margin-right: auto;
@@ -145,7 +145,7 @@
       text-align: center;
     }
 
-    p:nth-child(4) {
+    p:nth-child(4n) {
       display: none;
     }
   }
@@ -216,17 +216,18 @@
       }
     }
 
-    p:nth-child(2) {
+    p:nth-child(2n) {
       @include font(18, 27);
       padding-bottom: 25px;
       padding-left: 15px;
+      text-align: left;
 
       @media (max-width: 767px) and (min-width: 321px) {
         margin: auto;
       }
     }
 
-    p:nth-child(3) {
+    p:nth-child(2n + 1) {
       @include font(16, 24);
       margin-left: 0;
       margin-right: 0;
@@ -242,7 +243,7 @@
       }
     }
 
-    p:nth-child(4) {
+    p:nth-child(4n) {
       display: none;
     }
   }
@@ -260,7 +261,7 @@
     min-height: 313px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("img/img-description-mobile@2x.jpg");
+      background-image: url("../img/img-description-mobile@2x.jpg");
     }
 
     @media (max-width: 767px) and (min-width: 321px) {

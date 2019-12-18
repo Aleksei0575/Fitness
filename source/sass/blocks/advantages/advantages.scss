@@ -173,7 +173,7 @@
     color: $white;
   }
 
-  span:nth-child(2) {
+  span:nth-child(2n) {
     @include font(26, 39);
     margin-top: -14px;
     padding-bottom: 30px;
@@ -329,6 +329,7 @@
     div:first-child {
       padding-left: 0;
       position: relative;
+      align-self: center;
     }
 
     span:first-child {
@@ -372,6 +373,7 @@
     div:first-child {
       padding-left: 0;
       position: relative;
+      align-self: center;
     }
 
     span:first-child {
@@ -426,7 +428,7 @@
       padding-top: 14px;
     }
 
-    span:nth-child(2) {
+    span:nth-child(2n) {
       @include font(22, 33);
       margin-top: -14px;
       padding-bottom: 13px;
@@ -457,6 +459,7 @@
     div:first-child {
       padding-left: 0;
       position: relative;
+      align-self: center;
     }
 
     span:first-child {
@@ -500,6 +503,7 @@
     div:first-child {
       padding-left: 0;
       position: relative;
+      align-self: center;
     }
 
     span:first-child {
@@ -602,7 +606,7 @@
       padding-top: 20px;
     }
 
-    span:nth-child(2) {
+    span:nth-child(2n) {
       margin-top: -23px;
     }
   }

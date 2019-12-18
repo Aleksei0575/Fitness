@@ -87,7 +87,7 @@
     color: $white;
   }
 
-  span:nth-child(3) {
+  span:nth-child(3n) {
     @include font(14, 21);
     position: absolute;
     top: 38px;
@@ -196,6 +196,11 @@
     }
   }
 
+  .banner__container {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
   .banner__info {
     padding: 46px 45px;
     max-height: 292px;
@@ -236,7 +241,7 @@
       top: 18px;
     }
 
-    span:nth-child(3) {
+    span:nth-child(3n) {
       @include font(10, 15);
       top: 22px;
     }
@@ -314,6 +319,13 @@
     background-image: none;
   }
 
+  .banner__container {
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-between;
+  }
+
   .banner__info {
     width: 290px;
 
@@ -342,7 +354,7 @@
     width: 290px;
     background-image: url("../img/banner-mobile@1x.jpg");
     background-size: 290px 292px;
-    background-position: top right;
+    background-position: top left;
     background-repeat: no-repeat;
     min-height: 292px;
 

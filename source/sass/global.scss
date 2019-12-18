@@ -1,5 +1,10 @@
 body {
   min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   font-family: $roboto-condensed;
   font-size: 14px;
   line-height: 21px;

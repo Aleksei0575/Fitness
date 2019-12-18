@@ -82,12 +82,12 @@
     font-weight: 100;
   }
 
-  span:nth-child(2) {
+  span:nth-child(2n) {
     @include font(109, 109);
     font-weight: 700;
   }
 
-  span:nth-child(3) {
+  span:nth-child(3n) {
     @include font(109, 109);
     padding-bottom: 59px;
     font-weight: 700;
@@ -176,11 +176,11 @@
       //font-weight: 100;
     }
 
-    span:nth-child(2) {
+    span:nth-child(2n) {
       @include font(86, 86);
     }
 
-    span:nth-child(3) {
+    span:nth-child(3n) {
       @include font(86, 86);
       padding-bottom: 46px;
     }
@@ -252,11 +252,11 @@
       //font-weight: 100;
     }
 
-    span:nth-child(2) {
+    span:nth-child(2n) {
       @include font(78, 78);
     }
 
-    span:nth-child(3) {
+    span:nth-child(3n) {
       @include font(78, 78);
       padding-bottom: 46px;
     }
