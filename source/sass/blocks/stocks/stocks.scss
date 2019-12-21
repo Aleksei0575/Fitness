@@ -88,6 +88,10 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/stocks-desktop@2x.jpg");
   }
+
+  @media (max-width: 1349px) and (min-width: 1024px) {
+    margin-right: 30px;
+  }
 }
 
 .stocks__block-right {
@@ -221,6 +225,10 @@
   .stocks__block-left {
     width: 678px;
     padding-bottom: 30px;
+
+    @media (max-width: 1023px) and (min-width: 679px) {
+      width: 100%;
+    }
   }
 
   .stocks__block-image {
@@ -236,11 +244,19 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/stocks-tablet@2x.jpg");
     }
+
+    @media (max-width: 1023px) and (min-width: 679px) {
+      width: 100%;
+    }
   }
 
   .stocks__block-right {
     width: 678px;
     flex-direction: row;
+
+    @media (max-width: 1023px) and (min-width: 679px) {
+      width: 100%;
+    }
   }
 
   .stocks__block-top {
@@ -248,12 +264,21 @@
     min-height: 211px;
     padding-right: 55px;
     box-sizing: border-box;
+
+    @media (max-width: 1023px) and (min-width: 679px) {
+      flex-grow: 1;
+      margin-right: 25px;
+    }
   }
 
   .stocks__block-bottom {
     width: 324px;
     min-height: 211px;
     box-sizing: border-box;
+
+    @media (max-width: 1023px) and (min-width: 679px) {
+      flex-grow: 1;
+    }
   }
 }
 
@@ -287,7 +312,7 @@
     text-align: center;
 
     @media (max-width: 767px) and (min-width: 321px) {
-      width: 100%;
+      margin: 0 auto;
     }
 
     h3 {

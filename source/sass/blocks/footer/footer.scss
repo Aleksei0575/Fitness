@@ -29,7 +29,15 @@
   .footer__navigation-list {
     @include reset-ul;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+
+    li {
+      margin-right: 40px;
+    }
+
+    li:nth-child(5n) {
+      margin-right: 0;
+    }
   }
 }
 
