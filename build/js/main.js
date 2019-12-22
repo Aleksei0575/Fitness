@@ -28,7 +28,7 @@ var phoneMask = function () {
       var mask = IMask(it, maskOptions);
     }
   });
-}
+};
 
 phoneMask();
 
@@ -55,7 +55,7 @@ var mySwiper = new Swiper ('.swiper-container', {
   // },
 });
 
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.trainers__slider--container', {
   // Default parameters
   slidesPerView: 1,
   spaceBetween: 10,

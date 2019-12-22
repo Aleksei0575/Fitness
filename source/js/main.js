@@ -25,7 +25,8 @@ var phoneMask = function () {
 
   telInputs.forEach(function (it) {
     if (it) {
-      var mask = IMask(it, maskOptions);
+      // eslint-disable-next-line no-new,no-undef
+      new IMask(it, maskOptions);
     }
   });
 };
@@ -33,7 +34,8 @@ var phoneMask = function () {
 phoneMask();
 
 // Слайдер
-var mySwiper = new Swiper ('.swiper-container', {
+// eslint-disable-next-line no-new,no-undef
+new Swiper('.swiper-container', {
   // Optional parameters
   // direction: 'vertical',
   // loop: true,
@@ -55,8 +57,10 @@ var mySwiper = new Swiper ('.swiper-container', {
   // },
 });
 
-var swiper = new Swiper('.swiper-container', {
+// eslint-disable-next-line no-new,no-undef
+new Swiper('.trainers__slider--container', {
   // Default parameters
+  loop:true,
   slidesPerView: 1,
   spaceBetween: 10,
   // Responsive breakpoints
@@ -67,7 +71,7 @@ var swiper = new Swiper('.swiper-container', {
       spaceBetween: 5
     },
     // when window width is >= 480px
-    768: {
+    767: {
       slidesPerView: 2,
       spaceBetween: 10
     },
