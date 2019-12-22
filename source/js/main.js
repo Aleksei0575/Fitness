@@ -58,7 +58,7 @@ new Swiper('.swiper-container', {
 });
 
 // eslint-disable-next-line no-new,no-undef
-new Swiper('.trainers__slider--container', {
+var trainersSlider = new Swiper('.trainers__slider--container', {
   // Default parameters
   loop:true,
   slidesPerView: 1,
@@ -83,6 +83,18 @@ new Swiper('.trainers__slider--container', {
   }
 });
 
+var buttonPrev = document.querySelector('.slider__control--prev');
+var buttonNext = document.querySelector('.slider__control--next');
+
+buttonPrev.addEventListener('click', function (e) {
+  e.preventDefault();
+  trainersSlider.slidePrev();
+});
+
+buttonNext.addEventListener('click', function (e) {
+  e.preventDefault();
+  trainersSlider.slideNext();
+});
 
 // Старый слайдер
 // var multiItemSlider = (function () {
