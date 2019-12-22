@@ -470,22 +470,39 @@
       <section class="reviews">
         <h2>Отзывы</h2>
         <div class="reviews__slider">
-          <div class="reviews__block">
-            <div class="reviews__image">
-              <picture>
-                <source type="image/webp" srcset="img/foto-reviews-desktop@1x.webp 1x, img/foto-reviews-desktop@2x.webp 2x">
-                <!-- 1x: 80px; 2x: 160px;-->
-                <img src="img/foto-reviews-desktop@1x.png" srcset="img/foto-reviews-desktop@2x.png 2x" width="80" height="80" alt="Изображение пользователя">
-              </picture>
+          <div class="reviews__wrapper swiper-container reviews__slider--container">
+            <div class="reviews__list swiper-wrapper">
+              <div class="reviews__block swiper-slide">
+                <div class="reviews__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/foto-reviews-desktop@1x.webp 1x, img/foto-reviews-desktop@2x.webp 2x">
+                    <!-- 1x: 80px; 2x: 160px;-->
+                    <img src="img/foto-reviews-desktop@1x.png" srcset="img/foto-reviews-desktop@2x.png 2x" width="80" height="80" alt="Изображение пользователя">
+                  </picture>
+                </div>
+                <div class="reviews__content">
+                  <h3>Анна Орлова</h3>
+                  <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный.
+                    Зал просторный, даже в вечернее время нет очередей»</p>
+                </div>
+              </div>
+              <div class="reviews__block swiper-slide">
+                <div class="reviews__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/foto-reviews-desktop@1x.webp 1x, img/foto-reviews-desktop@2x.webp 2x">
+                    <!-- 1x: 80px; 2x: 160px;-->
+                    <img src="img/foto-reviews-desktop@1x.png" srcset="img/foto-reviews-desktop@2x.png 2x" width="80" height="80" alt="Изображение пользователя">
+                  </picture>
+                </div>
+                <div class="reviews__content">
+                  <h3>Вася Пупкин</h3>
+                  <p>«eu lobortis elementum nibh tellus molestie nunc non blandit massa enim nec dui nunc mattis»</p>
+                </div>
+              </div>
             </div>
-            <div class="reviews__content">
-              <h3>Анна Орлова</h3>
-              <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный.
-                Зал просторный, даже в вечернее время нет очередей»</p>
-            </div>
-            <a class="reviews__control reviews__control--prev" href="#" role="button">Prev</a>
-            <a class="reviews__control reviews__control--next" href="#" role="button">Next</a>
           </div>
+          <div class="reviews__control reviews__control--prev" role="button">Prev</div>
+          <div class="reviews__control reviews__control--next" role="button">Next</div>
         </div>
       </section>
 

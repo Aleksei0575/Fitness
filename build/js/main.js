@@ -96,6 +96,67 @@ buttonNext.addEventListener('click', function (e) {
   trainersSlider.slideNext();
 });
 
+var reviewsSlider = new Swiper('.swiper-container', {
+  // Optional parameters
+  // direction: 'vertical',
+  // loop: true,
+
+  // If we need pagination
+  // pagination: {
+  //   el: '.swiper-pagination',
+  // },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.reviews__control--next',
+    prevEl: '.reviews__control--prev',
+  },
+
+  // And if we need scrollbar
+  // scrollbar: {
+  //   el: '.swiper-scrollbar',
+  // },
+});
+
+// eslint-disable-next-line no-new,no-undef
+new Swiper('.reviews__slider--container', {
+  // Default parameters
+  loop:true,
+  slidesPerView: 1,
+  spaceBetween: 10,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 5
+    },
+    // when window width is >= 480px
+    767: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    // when window width is >= 640px
+    1366: {
+      slidesPerView: 1,
+      spaceBetween: 5
+    }
+  }
+});
+
+var reviewsButtonPrev = document.querySelector('.reviews__control--prev');
+var reviewsButtonNext = document.querySelector('.reviews__control--next');
+
+reviewsButtonPrev.addEventListener('click', function (e) {
+  e.preventDefault();
+  reviewsSlider.slidePrev();
+});
+
+reviewsButtonNext.addEventListener('click', function (e) {
+  e.preventDefault();
+  reviewsSlider.slideNext();
+});
+
 // Старый слайдер
 // var multiItemSlider = (function () {
 //   return function (selector, config) {

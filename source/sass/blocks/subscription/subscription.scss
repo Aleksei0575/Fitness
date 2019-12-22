@@ -61,8 +61,10 @@
   max-width: 1366px;
   margin: 0 auto;
 
-  li:nth-child(3n) {
-    margin-right: 0;
+  @media (min-width: $desktop-width) {
+    li:nth-child(3n) {
+      margin-right: 0;
+    }
   }
 }
 

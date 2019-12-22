@@ -166,6 +166,12 @@
   border-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
   border-image-slice: 1;
 
+  /*For Safari*/
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent;
+  border-image: -webkit-linear-gradient (111.72deg, #ed0233 17.6%, #003eb7 95.31%);
+
   &:hover,
   &:focus {
     box-shadow: -2px 1px 15px 0 #a9adb5,

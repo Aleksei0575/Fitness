@@ -23,6 +23,10 @@
   box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
 }
 
+.reviews__wrapper {
+  overflow: hidden;
+}
+
 .reviews__block {
   padding: 62px 62px 57px 62px;
   display: flex;
