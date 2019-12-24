@@ -101,6 +101,12 @@
 
   .footer__navigation {
     width: 391px;
+
+    .footer__navigation-list {
+      li {
+        margin-right: 30px;
+      }
+    }
   }
 
   .footer__navigation-link {

@@ -35,7 +35,7 @@ phoneMask();
 
 // Слайдер
 // eslint-disable-next-line no-new,no-undef
-new Swiper('.swiper-container', {
+var trainersSlider = new Swiper('.swiper-container', {
   // Optional parameters
   // direction: 'vertical',
   // loop: true,
@@ -58,9 +58,9 @@ new Swiper('.swiper-container', {
 });
 
 // eslint-disable-next-line no-new,no-undef
-var trainersSlider = new Swiper('.trainers__slider--container', {
+trainersSlider = new Swiper('.trainers__slider--container', {
   // Default parameters
-  loop:true,
+  // loop: true,
   slidesPerView: 1,
   spaceBetween: 10,
   // Responsive breakpoints
@@ -70,10 +70,15 @@ var trainersSlider = new Swiper('.trainers__slider--container', {
       slidesPerView: 1,
       spaceBetween: 5
     },
-    // when window width is >= 480px
-    767: {
+    // when window width is >= 768px
+    768: {
       slidesPerView: 2,
       spaceBetween: 10
+    },
+    // when window width is >= 1024px
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 5
     },
     // when window width is >= 640px
     1366: {
@@ -96,7 +101,8 @@ buttonNext.addEventListener('click', function (e) {
   trainersSlider.slideNext();
 });
 
-var reviewsSlider = new Swiper('.swiper-container', {
+// eslint-disable-next-line no-new,no-undef
+var reviewsSlider = new Swiper('.rev-swiper-container', {
   // Optional parameters
   // direction: 'vertical',
   // loop: true,
@@ -119,9 +125,9 @@ var reviewsSlider = new Swiper('.swiper-container', {
 });
 
 // eslint-disable-next-line no-new,no-undef
-new Swiper('.reviews__slider--container', {
+reviewsSlider = new Swiper('.reviews__slider--container', {
   // Default parameters
-  loop:true,
+  loop: true,
   slidesPerView: 1,
   spaceBetween: 10,
   // Responsive breakpoints

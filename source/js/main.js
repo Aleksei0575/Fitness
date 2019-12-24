@@ -35,7 +35,7 @@ phoneMask();
 
 // Слайдер
 // eslint-disable-next-line no-new,no-undef
-new Swiper('.swiper-container', {
+var trainersSlider = new Swiper('.swiper-container', {
   // Optional parameters
   // direction: 'vertical',
   // loop: true,
@@ -58,9 +58,9 @@ new Swiper('.swiper-container', {
 });
 
 // eslint-disable-next-line no-new,no-undef
-var trainersSlider = new Swiper('.trainers__slider--container', {
+trainersSlider = new Swiper('.trainers__slider--container', {
   // Default parameters
-  loop:true,
+  // loop: true,
   slidesPerView: 1,
   spaceBetween: 10,
   // Responsive breakpoints
@@ -97,7 +97,7 @@ buttonNext.addEventListener('click', function (e) {
 });
 
 // eslint-disable-next-line no-new,no-undef
-new Swiper('.swiper-container', {
+var reviewsSlider = new Swiper('.rev-swiper-container', {
   // Optional parameters
   // direction: 'vertical',
   // loop: true,
@@ -120,9 +120,9 @@ new Swiper('.swiper-container', {
 });
 
 // eslint-disable-next-line no-new,no-undef
-new Swiper('.reviews__slider--container', {
+reviewsSlider = new Swiper('.reviews__slider--container', {
   // Default parameters
-  loop:true,
+  loop: true,
   slidesPerView: 1,
   spaceBetween: 10,
   // Responsive breakpoints
@@ -145,18 +145,18 @@ new Swiper('.reviews__slider--container', {
   }
 });
 
-// var reviewsButtonPrev = document.querySelector('.reviews__control--prev');
-// var reviewsButtonNext = document.querySelector('.reviews__control--next');
-//
-// reviewsButtonPrev.addEventListener('click', function (e) {
-//   e.preventDefault();
-//   reviewsSlider.slidePrev();
-// });
-//
-// reviewsButtonNext.addEventListener('click', function (e) {
-//   e.preventDefault();
-//   reviewsSlider.slideNext();
-// });
+var reviewsButtonPrev = document.querySelector('.reviews__control--prev');
+var reviewsButtonNext = document.querySelector('.reviews__control--next');
+
+reviewsButtonPrev.addEventListener('click', function (e) {
+  e.preventDefault();
+  reviewsSlider.slidePrev();
+});
+
+reviewsButtonNext.addEventListener('click', function (e) {
+  e.preventDefault();
+  reviewsSlider.slideNext();
+});
 
 // Старый слайдер
 // var multiItemSlider = (function () {

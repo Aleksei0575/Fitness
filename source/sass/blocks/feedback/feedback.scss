@@ -24,6 +24,19 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .feedback__wrapper {
+    @media (max-width: 3000px) and (min-width: 1500px) {
+      width: 789px;
+      margin-left: auto;
+    }
+
+    @media (max-width: 1024px) and (min-width: 1200px) {
+      width: 100%;
+    }
+  }
+}
+
 @media (max-width: $tablet-width) {
   .feedback {
     width: 100%;
