@@ -289,6 +289,13 @@
     padding-bottom: 27px;
   }
 
+  .subscription__button-block {
+    @media (max-width: 767px) and (min-width: 321px) {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+  }
+
   .subscription__button {
     @media (max-width: 767px) and (min-width: 321px) {
       min-width: 100%;

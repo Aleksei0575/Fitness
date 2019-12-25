@@ -80,31 +80,9 @@ buttonNext.addEventListener('click', function (e) {
   trainersSlider.slideNext();
 });
 
-// eslint-disable-next-line no-new,no-undef
-var reviewsSlider = new Swiper('.rev-swiper-container', {
-  // Optional parameters
-  // direction: 'vertical',
-  // loop: true,
-
-  // If we need pagination
-  // pagination: {
-  //   el: '.swiper-pagination',
-  // },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.reviews__control--next',
-    prevEl: '.reviews__control--prev',
-  },
-
-  // And if we need scrollbar
-  // scrollbar: {
-  //   el: '.swiper-scrollbar',
-  // },
-});
 
 // eslint-disable-next-line no-new,no-undef
-reviewsSlider = new Swiper('.reviews__slider--container', {
+var reviewsSlider = new Swiper('.reviews__slider--container', {
   // Default parameters
   loop: true,
   slidesPerView: 1,

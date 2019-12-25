@@ -207,7 +207,7 @@
     box-sizing: border-box;
 
     @media (max-width: 767px) and (min-width: 321px) {
-      justify-content: center;
+      justify-content: flex-start;
     }
 
     .reviews__image {
@@ -234,6 +234,10 @@
         top: -69px;
         right: 1px;
 
+        @media (max-width: 500px) and (min-width: 430px) {
+          width: 145px;
+        }
+
         @media (max-width: 767px) and (min-width: 501px) {
           width: 110px;
           position: initial;
@@ -242,10 +246,14 @@
       }
 
       p {
-        text-align: center;
+        //text-align: center;
+
+        @media (max-width: 767px) and (min-width: 501px) {
+          text-align: left;
+        }
 
         @media (max-width: 767px) and (min-width: 701px) {
-          text-align: left;
+          width: 435px;
         }
       }
     }
