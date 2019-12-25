@@ -70,10 +70,15 @@ trainersSlider = new Swiper('.trainers__slider--container', {
       slidesPerView: 1,
       spaceBetween: 5
     },
-    // when window width is >= 480px
+    // when window width is >= 767px
     767: {
       slidesPerView: 2,
       spaceBetween: 10
+    },
+    // when window width is >= 1024px
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 5
     },
     // when window width is >= 640px
     1366: {
@@ -132,12 +137,12 @@ reviewsSlider = new Swiper('.reviews__slider--container', {
       slidesPerView: 1,
       spaceBetween: 5
     },
-    // when window width is >= 480px
+    // when window width is >= 767px
     767: {
       slidesPerView: 1,
       spaceBetween: 10
     },
-    // when window width is >= 640px
+    // when window width is >= 1366px
     1366: {
       slidesPerView: 1,
       spaceBetween: 5

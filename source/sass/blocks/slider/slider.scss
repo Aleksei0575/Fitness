@@ -51,7 +51,7 @@
 
   /*Блок для hover*/
   div {
-    width: 88%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -108,10 +108,11 @@
     display: none;
   }
 
-  @media (max-width: 1365px) and (min-width: 1024px) {
+  @media (max-width: 1189px) and (min-width: 1024px) {
     div {
       justify-content: center;
       padding: 0;
+      padding-top: 50px;
     }
 
     ul {
@@ -120,78 +121,15 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
+    }
+  }
+
+  @media (min-width: 1250px) {
+    div {
+      width: 91%;
     }
   }
   /*Блок hover окончание*/
-
-  &--active {
-    //div {
-    //  width: 88%;
-    //  display: flex;
-    //  flex-direction: column;
-    //  flex-wrap: wrap;
-    //  align-items: center;
-    //  padding: 52px 41px;
-    //
-    //  position: absolute;
-    //  box-sizing: border-box;
-    //  min-height: 100%;
-    //
-    //  background: rgba(16, 38, 84, 0.89);
-    //}
-    //
-    //b {
-    //  display: block;
-    //  text-align: center;
-    //  @include font(18, 27);
-    //  color: $white;
-    //}
-    //
-    //span {
-    //  display: block;
-    //  text-align: center;
-    //  text-align: center;
-    //  @include font(16, 24);
-    //
-    //  color: #85bdcc;
-    //}
-    //
-    //ul {
-    //  padding: 0;
-    //  padding-left: 29px;
-    //  padding-top: 30px;
-    //  list-style-type: disc;
-    //
-    //  color: $white;
-    //
-    //  li:first-child {
-    //    padding-bottom: 12px;
-    //  }
-    //
-    //  li:nth-child(2) {
-    //    padding-bottom: 13px;
-    //  }
-    //}
-    //
-    //h3 {
-    //  display: none;
-    //}
-  }
-
-  @media (max-width: 1365px) and (min-width: 1024px) {
-    div {
-      justify-content: center;
-      padding: 0;
-    }
-
-    ul {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  }
 }
 
 .slider__link-two {
