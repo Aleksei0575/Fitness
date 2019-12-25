@@ -35,30 +35,9 @@ phoneMask();
 
 // Слайдер
 // eslint-disable-next-line no-new,no-undef
-var trainersSlider = new Swiper('.swiper-container', {
-  // Optional parameters
-  // direction: 'vertical',
-  // loop: true,
-
-  // If we need pagination
-  // pagination: {
-  //   el: '.swiper-pagination',
-  // },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.slider__control--next',
-    prevEl: '.slider__control--prev',
-  },
-
-  // And if we need scrollbar
-  // scrollbar: {
-  //   el: '.swiper-scrollbar',
-  // },
-});
 
 // eslint-disable-next-line no-new,no-undef
-trainersSlider = new Swiper('.trainers__slider--container', {
+var trainersSlider = new Swiper('.trainers__slider--container', {
   // Default parameters
   // loop: true,
   slidesPerView: 1,
